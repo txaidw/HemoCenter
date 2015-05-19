@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9174ED61B0A2D34000F57A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9174ED51B0A2D34000F57A5 /* AppDelegate.swift */; };
+		E9174ED81B0A2D34000F57A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9174ED71B0A2D34000F57A5 /* ViewController.swift */; };
+		E9174EDB1B0A2D34000F57A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9174ED91B0A2D34000F57A5 /* Main.storyboard */; };
+		E9174EDD1B0A2D34000F57A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9174EDC1B0A2D34000F57A5 /* Images.xcassets */; };
+		E9174EE01B0A2D34000F57A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9174EDE1B0A2D34000F57A5 /* LaunchScreen.xib */; };
+		E9174EEC1B0A2D35000F57A5 /* HemoCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9174EEB1B0A2D35000F57A5 /* HemoCenterTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9174EE61B0A2D35000F57A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9174EC81B0A2D34000F57A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9174ECF1B0A2D34000F57A5;
+			remoteInfo = HemoCenter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E9174ED01B0A2D34000F57A5 /* HemoCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HemoCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9174ED41B0A2D34000F57A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9174ED51B0A2D34000F57A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9174ED71B0A2D34000F57A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9174EDA1B0A2D34000F57A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9174EDC1B0A2D34000F57A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E9174EDF1B0A2D34000F57A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E9174EE51B0A2D35000F57A5 /* HemoCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HemoCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9174EEA1B0A2D35000F57A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9174EEB1B0A2D35000F57A5 /* HemoCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemoCenterTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9174ECD1B0A2D34000F57A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9174EE21B0A2D35000F57A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9174EC71B0A2D34000F57A5 = {
+			isa = PBXGroup;
+			children = (
+				E9174ED21B0A2D34000F57A5 /* HemoCenter */,
+				E9174EE81B0A2D35000F57A5 /* HemoCenterTests */,
+				E9174ED11B0A2D34000F57A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9174ED11B0A2D34000F57A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9174ED01B0A2D34000F57A5 /* HemoCenter.app */,
+				E9174EE51B0A2D35000F57A5 /* HemoCenterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9174ED21B0A2D34000F57A5 /* HemoCenter */ = {
+			isa = PBXGroup;
+			children = (
+				E9174ED51B0A2D34000F57A5 /* AppDelegate.swift */,
+				E9174ED71B0A2D34000F57A5 /* ViewController.swift */,
+				E9174ED91B0A2D34000F57A5 /* Main.storyboard */,
+				E9174EDC1B0A2D34000F57A5 /* Images.xcassets */,
+				E9174EDE1B0A2D34000F57A5 /* LaunchScreen.xib */,
+				E9174ED31B0A2D34000F57A5 /* Supporting Files */,
+			);
+			path = HemoCenter;
+			sourceTree = "<group>";
+		};
+		E9174ED31B0A2D34000F57A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9174ED41B0A2D34000F57A5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9174EE81B0A2D35000F57A5 /* HemoCenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9174EEB1B0A2D35000F57A5 /* HemoCenterTests.swift */,
+				E9174EE91B0A2D35000F57A5 /* Supporting Files */,
+			);
+			path = HemoCenterTests;
+			sourceTree = "<group>";
+		};
+		E9174EE91B0A2D35000F57A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9174EEA1B0A2D35000F57A5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9174ECF1B0A2D34000F57A5 /* HemoCenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9174EEF1B0A2D35000F57A5 /* Build configuration list for PBXNativeTarget "HemoCenter" */;
+			buildPhases = (
+				E9174ECC1B0A2D34000F57A5 /* Sources */,
+				E9174ECD1B0A2D34000F57A5 /* Frameworks */,
+				E9174ECE1B0A2D34000F57A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HemoCenter;
+			productName = HemoCenter;
+			productReference = E9174ED01B0A2D34000F57A5 /* HemoCenter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9174EE41B0A2D35000F57A5 /* HemoCenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9174EF21B0A2D35000F57A5 /* Build configuration list for PBXNativeTarget "HemoCenterTests" */;
+			buildPhases = (
+				E9174EE11B0A2D35000F57A5 /* Sources */,
+				E9174EE21B0A2D35000F57A5 /* Frameworks */,
+				E9174EE31B0A2D35000F57A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9174EE71B0A2D35000F57A5 /* PBXTargetDependency */,
+			);
+			name = HemoCenterTests;
+			productName = HemoCenterTests;
+			productReference = E9174EE51B0A2D35000F57A5 /* HemoCenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9174EC81B0A2D34000F57A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = TDW;
+				TargetAttributes = {
+					E9174ECF1B0A2D34000F57A5 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E9174EE41B0A2D35000F57A5 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E9174ECF1B0A2D34000F57A5;
+					};
+				};
+			};
+			buildConfigurationList = E9174ECB1B0A2D34000F57A5 /* Build configuration list for PBXProject "HemoCenter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9174EC71B0A2D34000F57A5;
+			productRefGroup = E9174ED11B0A2D34000F57A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9174ECF1B0A2D34000F57A5 /* HemoCenter */,
+				E9174EE41B0A2D35000F57A5 /* HemoCenterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9174ECE1B0A2D34000F57A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9174EDB1B0A2D34000F57A5 /* Main.storyboard in Resources */,
+				E9174EE01B0A2D34000F57A5 /* LaunchScreen.xib in Resources */,
+				E9174EDD1B0A2D34000F57A5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9174EE31B0A2D35000F57A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9174ECC1B0A2D34000F57A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9174ED81B0A2D34000F57A5 /* ViewController.swift in Sources */,
+				E9174ED61B0A2D34000F57A5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9174EE11B0A2D35000F57A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9174EEC1B0A2D35000F57A5 /* HemoCenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9174EE71B0A2D35000F57A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9174ECF1B0A2D34000F57A5 /* HemoCenter */;
+			targetProxy = E9174EE61B0A2D35000F57A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9174ED91B0A2D34000F57A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9174EDA1B0A2D34000F57A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9174EDE1B0A2D34000F57A5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9174EDF1B0A2D34000F57A5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9174EED1B0A2D35000F57A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		E9174EEE1B0A2D35000F57A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9174EF01B0A2D35000F57A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HemoCenter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9174EF11B0A2D35000F57A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HemoCenter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E9174EF31B0A2D35000F57A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HemoCenterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HemoCenter.app/HemoCenter";
+			};
+			name = Debug;
+		};
+		E9174EF41B0A2D35000F57A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HemoCenterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HemoCenter.app/HemoCenter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9174ECB1B0A2D34000F57A5 /* Build configuration list for PBXProject "HemoCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9174EED1B0A2D35000F57A5 /* Debug */,
+				E9174EEE1B0A2D35000F57A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9174EEF1B0A2D35000F57A5 /* Build configuration list for PBXNativeTarget "HemoCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9174EF01B0A2D35000F57A5 /* Debug */,
+				E9174EF11B0A2D35000F57A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E9174EF21B0A2D35000F57A5 /* Build configuration list for PBXNativeTarget "HemoCenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9174EF31B0A2D35000F57A5 /* Debug */,
+				E9174EF41B0A2D35000F57A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9174EC81B0A2D34000F57A5 /* Project object */;
+}
