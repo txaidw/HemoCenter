@@ -13,6 +13,8 @@
 		E9174EDD1B0A2D34000F57A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9174EDC1B0A2D34000F57A5 /* Images.xcassets */; };
 		E9174EE01B0A2D34000F57A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9174EDE1B0A2D34000F57A5 /* LaunchScreen.xib */; };
 		E9174EEC1B0A2D35000F57A5 /* HemoCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9174EEB1B0A2D35000F57A5 /* HemoCenterTests.swift */; };
+		E943FC5B1B1D503400F5A52D /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943FC5A1B1D503400F5A52D /* MasterTableViewController.swift */; };
+		E943FC5E1B1D511A00F5A52D /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		E9174EE51B0A2D35000F57A5 /* HemoCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HemoCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9174EEA1B0A2D35000F57A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9174EEB1B0A2D35000F57A5 /* HemoCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemoCenterTests.swift; sourceTree = "<group>"; };
+		E943FC5A1B1D503400F5A52D /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
+		E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				E9174ED51B0A2D34000F57A5 /* AppDelegate.swift */,
 				E9174ED71B0A2D34000F57A5 /* ViewController.swift */,
+				E943FC5C1B1D503800F5A52D /* Controllers */,
 				E9174ED91B0A2D34000F57A5 /* Main.storyboard */,
 				E9174EDC1B0A2D34000F57A5 /* Images.xcassets */,
 				E9174EDE1B0A2D34000F57A5 /* LaunchScreen.xib */,
@@ -110,6 +115,15 @@
 				E9174EEA1B0A2D35000F57A5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E943FC5C1B1D503800F5A52D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E943FC5A1B1D503400F5A52D /* MasterTableViewController.swift */,
+				E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +227,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9174ED81B0A2D34000F57A5 /* ViewController.swift in Sources */,
+				E943FC5B1B1D503400F5A52D /* MasterTableViewController.swift in Sources */,
 				E9174ED61B0A2D34000F57A5 /* AppDelegate.swift in Sources */,
+				E943FC5E1B1D511A00F5A52D /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HemoCenter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,7 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HemoCenter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
