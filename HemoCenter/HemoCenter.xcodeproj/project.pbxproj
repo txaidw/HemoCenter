@@ -13,6 +13,7 @@
 		E9174EDD1B0A2D34000F57A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9174EDC1B0A2D34000F57A5 /* Images.xcassets */; };
 		E9174EE01B0A2D34000F57A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9174EDE1B0A2D34000F57A5 /* LaunchScreen.xib */; };
 		E9174EEC1B0A2D35000F57A5 /* HemoCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9174EEB1B0A2D35000F57A5 /* HemoCenterTests.swift */; };
+		E9296F591B1DF7C1000D5DC7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9296F581B1DF7C1000D5DC7 /* LoginViewController.swift */; };
 		E943FC5B1B1D503400F5A52D /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943FC5A1B1D503400F5A52D /* MasterTableViewController.swift */; };
 		E943FC5E1B1D511A00F5A52D /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		E9174EE51B0A2D35000F57A5 /* HemoCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HemoCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9174EEA1B0A2D35000F57A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9174EEB1B0A2D35000F57A5 /* HemoCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemoCenterTests.swift; sourceTree = "<group>"; };
+		E9296F581B1DF7C1000D5DC7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E943FC5A1B1D503400F5A52D /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 		E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				E943FC5A1B1D503400F5A52D /* MasterTableViewController.swift */,
+				E9296F581B1DF7C1000D5DC7 /* LoginViewController.swift */,
 				E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */,
 			);
 			name = Controllers;
@@ -229,6 +232,7 @@
 				E9174ED81B0A2D34000F57A5 /* ViewController.swift in Sources */,
 				E943FC5B1B1D503400F5A52D /* MasterTableViewController.swift in Sources */,
 				E9174ED61B0A2D34000F57A5 /* AppDelegate.swift in Sources */,
+				E9296F591B1DF7C1000D5DC7 /* LoginViewController.swift in Sources */,
 				E943FC5E1B1D511A00F5A52D /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
