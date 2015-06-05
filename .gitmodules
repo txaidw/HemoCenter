@@ -1,0 +1,3 @@
+[submodule "TestProjects/WebserviceTests/Alamofire"]
+	path = TestProjects/WebserviceTests/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
