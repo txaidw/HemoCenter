@@ -41,9 +41,9 @@ class User_DAO
         $hash = $util->hashSSHA($password);
         $encryp_pass = $hash["encrypted"];
         $salt = $hash["salt"];
-       // echo '<br/>'.$uid.'</br>'.$name.'<br>'.$email.'<br>'.$encryp_pass.'<br>'.$salt.'<br>'.$type.'<br>'.$username;
+
         $stmt = $conn->prepare($query);
-        $result = $stmt->execute(array($uid,$name,$email, $encryp_pass, $salt,$type, $username)) or die("Erro ao inserir usuario no banco de dados");
+        $result = $stmt->execute(array($uid,$name,$email, $encryp_pass, $salt,$type, $username));
 
         $conn = null;
         if ($result) {

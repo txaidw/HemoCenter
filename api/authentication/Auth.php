@@ -10,8 +10,7 @@
 require_once 'dao/Auth_DAO.php';
 class Auth{
 
-    private $username;
-    private $password;
+    private $key;
 
     public function __constructor(){
 
@@ -19,26 +18,24 @@ class Auth{
     }
 
     //Set the data
-    public function setData($json_data){
-        $this->username = $json_data['username'];
-        $this->password = $json_data['password'];
-    }
-
-    //Return true if success  or false if fail
-    public function do_login(){
-        $dao = new Auth_DAO();
-        return $dao->do_login($this->username, $this->password);
-
+    public function setData($data_key){
+        $this->key = $data_key;
     }
 
 
+    //Check if an user is a management. Return true if yes or false if not
     public function isManagement(){
-
+        $auth = new Auth_DAO();
+        return $auth->isManagement($this->key);
 
     }
 
+    //Check if an user is on database
+    public function isAuthenticUser(){
+        $auth = new Auth_DAO();
+        return $auth->isUser($this->key);
 
-
+    }
 
 
 
