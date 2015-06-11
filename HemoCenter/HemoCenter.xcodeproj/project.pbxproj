@@ -112,6 +112,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		711D1ABE1B295AB200A04FB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				711D1AC51B295AB200A04FB1 /* Alamofire.framework */,
+				711D1AC71B295AB200A04FB1 /* Alamofire.framework */,
+				711D1AC91B295AB200A04FB1 /* Alamofire iOS Tests.xctest */,
+				711D1ACB1B295AB200A04FB1 /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E9174EC71B0A2D34000F57A5 = {
 			isa = PBXGroup;
 			children = (
