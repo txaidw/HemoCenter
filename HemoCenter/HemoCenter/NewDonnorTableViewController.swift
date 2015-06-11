@@ -31,9 +31,14 @@ class NewDonnorTableViewController: UITableViewController {
     }
 
     @IBAction func save(sender: AnyObject) {
+ 
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let token = AppDelegate.$.userKeychainToken
-        WebServiceOperations.newDonnor(token, name: name.text, address: address.text, phone: phone.text.toInt()!, email: mail, CPF: cpf.text, bloodType: BloodType(type: bType.selectedSegmentIndex, rh: bRH.selectedSegmentIndex)) { (success, message) -> Void in
-            <#code#>
+        let statusView = segue.destinationViewController as! StatusViewController
+        statusView.networkingClosure = { (closure:(success: Bool, message: String) -> ()) in
+            WebServiceOperations.newDonnor(token, name: name, address: address, phone: phone, email: mail, CPF: cpf, bloodType: BloodType(type: bType, rh: bRH), closure)
         }
     }
     

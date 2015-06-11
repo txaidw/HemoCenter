@@ -16,6 +16,7 @@
 		E943FC5B1B1D503400F5A52D /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943FC5A1B1D503400F5A52D /* MasterTableViewController.swift */; };
 		E943FC5E1B1D511A00F5A52D /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */; };
 		E95A20491B29658C006222F1 /* BloodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A20481B29658C006222F1 /* BloodType.swift */; };
+		E95A204B1B2969E1006222F1 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A204A1B2969E1006222F1 /* StatusViewController.swift */; };
 		E9B885AF1B224DA5002B9369 /* NewDonnorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B885AE1B224DA5002B9369 /* NewDonnorTableViewController.swift */; };
 		E9CD60EF1B2943CD007E9540 /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD60EE1B2943CD007E9540 /* UserSearchViewController.swift */; };
 		E9CD60F71B295229007E9540 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD60F61B295229007E9540 /* Utilities.swift */; };
@@ -86,6 +87,7 @@
 		E943FC5A1B1D503400F5A52D /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 		E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		E95A20481B29658C006222F1 /* BloodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodType.swift; sourceTree = "<group>"; };
+		E95A204A1B2969E1006222F1 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		E9B885AE1B224DA5002B9369 /* NewDonnorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDonnorTableViewController.swift; sourceTree = "<group>"; };
 		E9CD60EE1B2943CD007E9540 /* UserSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
 		E9CD60F61B295229007E9540 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		E9D8E64D1B239DE10003A526 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				E95A204A1B2969E1006222F1 /* StatusViewController.swift */,
 				E9CD60EE1B2943CD007E9540 /* UserSearchViewController.swift */,
 				E9296F581B1DF7C1000D5DC7 /* LoginViewController.swift */,
 				E9D8E64E1B23A1BE0003A526 /* AboutViewController.swift */,
@@ -355,6 +358,7 @@
 				E9D8E6441B239C2E0003A526 /* NewDonationTableViewController.swift in Sources */,
 				E9B885AF1B224DA5002B9369 /* NewDonnorTableViewController.swift in Sources */,
 				E9D8E64F1B23A1BE0003A526 /* AboutViewController.swift in Sources */,
+				E95A204B1B2969E1006222F1 /* StatusViewController.swift in Sources */,
 				E943FC5E1B1D511A00F5A52D /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
