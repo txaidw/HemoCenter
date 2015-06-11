@@ -37,6 +37,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func loginButtonAction() {
+        activityIndicator.startAnimating()
         activityIndicator.alpha = 1.0
         loginButton.alpha = 0.0
         messageLogLabel.alpha = 0.0
@@ -45,15 +46,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let password = passwordTextField.text
         
         WebServiceOperations.login(user, password: password) { [weak self] (success, message, authKey) -> Void in
-            if success {
-                self?.performSegueWithIdentifier("loginSuccessful", sender: self)
-                self?.messageLogLabel.text = message
-            } else {
-                self?.messageLogLabel.text = message
+            delay(0.8) {
+                if success {
+                    self?.messageLogLabel.text = message
+                    AppDelegate.$.userKeychainToken = authKey
+                    delay(0.4) {
+                        self?.performSegueWithIdentifier("loginSuccessful", sender: self)
+                    }
+                } else {
+                    self?.messageLogLabel.text = message
+                    AppDelegate.$.userKeychainToken = nil
+                }
+                
+                self?.activityIndicator.alpha = 0.0
+                self?.loginButton.alpha = 1.0
+                self?.messageLogLabel.alpha = 1.0
             }
-            self?.activityIndicator.alpha = 0.0
-            self?.loginButton.alpha = 1.0
-            self?.messageLogLabel.alpha = 1.0
         }
     }
     
@@ -76,7 +84,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         let nextTag = textField.tag + 1
-
+        
         if nextTag == 4 {
             self.loginButtonAction()
             textField.resignFirstResponder()
