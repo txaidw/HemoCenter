@@ -36,7 +36,7 @@ class WebServiceOperations: NSObject {
             "name" : name,
             "adress" : address,
             "phone1" : phone,
-            "phone2" : "0",
+            "phone2" : 0,
             "email" : email,
             "cpf" : CPF,
             "blood_type" : bloodType.rawValue
