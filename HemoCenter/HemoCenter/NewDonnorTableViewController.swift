@@ -10,12 +10,15 @@ import UIKit
 
 class NewDonnorTableViewController: UITableViewController {
 
-    @IBOutlet weak var nome: UITextField!
+    @IBOutlet weak var name: UITextField!
     @IBOutlet weak var cpf: UITextField!
-    @IBOutlet weak var email: UITextField!
-    @IBOutlet weak var endereço: UITextField!
-    @IBOutlet weak var telefone: UITextField!
+    @IBOutlet weak var mail: UITextField!
+    @IBOutlet weak var address: UITextField!
+    @IBOutlet weak var phone: UITextField!
     
+    @IBOutlet weak var bRH: UISegmentedControl!
+    @IBOutlet weak var bType: UISegmentedControl!
+    @IBOutlet weak var donnations: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +30,13 @@ class NewDonnorTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
+    @IBAction func save(sender: AnyObject) {
+        let token = AppDelegate.$.userKeychainToken
+        WebServiceOperations.newDonnor(token, name: name.text, address: address.text, phone: phone.text.toInt()!, email: mail, CPF: cpf.text, bloodType: BloodType(type: bType.selectedSegmentIndex, rh: bRH.selectedSegmentIndex)) { (success, message) -> Void in
+            <#code#>
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -15,6 +15,7 @@
 		E9296F591B1DF7C1000D5DC7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9296F581B1DF7C1000D5DC7 /* LoginViewController.swift */; };
 		E943FC5B1B1D503400F5A52D /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943FC5A1B1D503400F5A52D /* MasterTableViewController.swift */; };
 		E943FC5E1B1D511A00F5A52D /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */; };
+		E95A20491B29658C006222F1 /* BloodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A20481B29658C006222F1 /* BloodType.swift */; };
 		E9B885AF1B224DA5002B9369 /* NewDonnorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B885AE1B224DA5002B9369 /* NewDonnorTableViewController.swift */; };
 		E9CD60EF1B2943CD007E9540 /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD60EE1B2943CD007E9540 /* UserSearchViewController.swift */; };
 		E9CD60F71B295229007E9540 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD60F61B295229007E9540 /* Utilities.swift */; };
@@ -84,6 +85,7 @@
 		E9296F581B1DF7C1000D5DC7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E943FC5A1B1D503400F5A52D /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 		E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		E95A20481B29658C006222F1 /* BloodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodType.swift; sourceTree = "<group>"; };
 		E9B885AE1B224DA5002B9369 /* NewDonnorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDonnorTableViewController.swift; sourceTree = "<group>"; };
 		E9CD60EE1B2943CD007E9540 /* UserSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
 		E9CD60F61B295229007E9540 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		E9174ED21B0A2D34000F57A5 /* HemoCenter */ = {
 			isa = PBXGroup;
 			children = (
+				E95A20481B29658C006222F1 /* BloodType.swift */,
 				E943FC5C1B1D503800F5A52D /* Controllers */,
 				E9174ED51B0A2D34000F57A5 /* AppDelegate.swift */,
 				E9174ED91B0A2D34000F57A5 /* Main.storyboard */,
@@ -345,6 +348,7 @@
 				E9296F591B1DF7C1000D5DC7 /* LoginViewController.swift in Sources */,
 				71EF12321B293E5E00FA6D2D /* WebServiceOperations.swift in Sources */,
 				E9D8E6401B239BA20003A526 /* HemocenterToHospitalTransactionViewController.swift in Sources */,
+				E95A20491B29658C006222F1 /* BloodType.swift in Sources */,
 				E9D8E63E1B239B8C0003A526 /* HospitalToHemocenterTransactionViewController.swift in Sources */,
 				E9D8E6481B239D950003A526 /* HospitalReportsViewController.swift in Sources */,
 				E9CD60EF1B2943CD007E9540 /* UserSearchViewController.swift in Sources */,

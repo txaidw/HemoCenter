@@ -413,14 +413,27 @@
                     <navigationItem key="navigationItem" id="BC4-Be-Ob5">
                         <barButtonItem key="rightBarButtonItem" title="Salvar" id="Kre-yV-Y1E">
                             <color key="tintColor" red="0.87722986936569214" green="0.17274713516235352" blue="0.14331340789794922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="save:" destination="Uel-ER-SdT" id="ynr-ci-5YI"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="address" destination="Car-YI-GSw" id="CvA-bn-tfc"/>
+                        <outlet property="bRH" destination="h3R-sY-x2Q" id="oUk-bD-prh"/>
+                        <outlet property="bType" destination="fyo-Wm-cZl" id="Qvu-oK-CVm"/>
                         <outlet property="cpf" destination="hT6-o6-vAZ" id="NJE-yy-5tR"/>
+                        <outlet property="doações" destination="NfQ-Nf-roy" id="vRY-RR-hzt"/>
+                        <outlet property="donnations" destination="NfQ-Nf-roy" id="0Jz-Le-oyV"/>
                         <outlet property="email" destination="ITZ-y0-Bz3" id="onb-np-nN8"/>
                         <outlet property="endereço" destination="Car-YI-GSw" id="gPf-Nd-02F"/>
+                        <outlet property="fator" destination="h3R-sY-x2Q" id="v0P-CY-qfe"/>
+                        <outlet property="mail" destination="ITZ-y0-Bz3" id="Tai-xx-rWL"/>
+                        <outlet property="name" destination="d35-X8-oNi" id="QuQ-7m-fxf"/>
                         <outlet property="nome" destination="d35-X8-oNi" id="azg-zK-BXz"/>
+                        <outlet property="phone" destination="4D2-fY-sOx" id="Zw6-3k-jh9"/>
                         <outlet property="telefone" destination="4D2-fY-sOx" id="tvx-sv-ADW"/>
+                        <outlet property="tipo" destination="fyo-Wm-cZl" id="op9-cX-yfe"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TG-5p-ZTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -945,7 +958,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.65857237577438354" green="0.51475006341934204" blue="0.50418746471405029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="4"/>
@@ -1031,9 +1044,12 @@
                     <navigationItem key="navigationItem" title="Hemocentro" id="4Ng-Nf-ogR"/>
                     <connections>
                         <outlet property="activityIndicator" destination="TcC-Wd-1kP" id="vFj-34-fuo"/>
+                        <outlet property="bottomConstraint" destination="Zcq-vK-OGr" id="tpg-9S-fdU"/>
                         <outlet property="loginButton" destination="vNM-eg-Xzf" id="ZZm-lH-I1R"/>
                         <outlet property="messageLogLabel" destination="7le-AK-uI4" id="BVb-KB-Bma"/>
+                        <outlet property="midConstraint" destination="RD0-zX-ZhE" id="Xm6-je-lfD"/>
                         <outlet property="passwordTextField" destination="WRA-px-efI" id="fE0-aJ-wRz"/>
+                        <outlet property="topConstraint" destination="lYh-5C-sF1" id="FHL-pW-ktQ"/>
                         <outlet property="userTextField" destination="Ez2-I1-tc3" id="q10-Jj-fA9"/>
                         <segue destination="r7Y-9w-nUu" kind="presentation" identifier="loginSuccessful" modalTransitionStyle="flipHorizontal" id="ns7-YV-s9t"/>
                     </connections>

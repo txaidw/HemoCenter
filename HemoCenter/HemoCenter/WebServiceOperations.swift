@@ -9,9 +9,6 @@
 import Foundation
 import Alamofire
 
-enum BloodType: Int {
-    case Apos = 1, Aneg, Bpos, Bneg, ABpos, ABneg, Opos, Oneg
-}
 
 class WebServiceOperations: NSObject {
     
