@@ -29,7 +29,7 @@ class WebServiceOperations: NSObject {
         })
     }
     
-    class func newDonor(authKey: String, name: String, address: String, phone: Int, email: String, CPF: Int, bloodType: BloodType, completionHandler: (success: Bool, message: String) -> Void) {
+    class func newDonor(authKey: String, name: String, address: String, phone: Int, email: String, CPF: String, bloodType: BloodType, completionHandler: (success: Bool, message: String) -> Void) {
         let values = [
             "operation" : 2,
             "key" : authKey,
@@ -47,7 +47,7 @@ class WebServiceOperations: NSObject {
         })
     }
     
-    class func newDonation(authKey: String, CPF: Int, CNPJ: Int, bloodType: BloodType, amountMl: Float, completionHandler: (success: Bool, message: String) -> Void) {
+    class func newDonation(authKey: String, CPF: String, CNPJ: String, bloodType: BloodType, amountMl: Float, completionHandler: (success: Bool, message: String) -> Void) {
         let values = [
             "operation": 3,
             "key": authKey,
