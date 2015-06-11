@@ -12,6 +12,6 @@ enum BloodType: Int {
     case Apos = 1, Aneg, Bpos, Bneg, ABpos, ABneg, Opos, Oneg
     
     init?(type:Int, rh:Int) {
-        self.init(rawValue: type*2 + rh)
+        self.init(rawValue: type*2 + (rh+1))
     }
 }

@@ -30,15 +30,19 @@ class NewDonnorTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    @IBAction func save(sender: AnyObject) {
- 
-    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let token = AppDelegate.$.userKeychainToken
+        let token = AppDelegate.$.userKeychainToken!
+        let name = self.name.text
+        let address = self.address.text
+        let phone = self.phone.text.toInt()!
+        let email = self.mail.text
+        let cpf = self.cpf.text
+        let bt = BloodType(type: bType.selectedSegmentIndex, rh: bRH.selectedSegmentIndex)!
         let statusView = segue.destinationViewController as! StatusViewController
+        statusView.initialMessage = "Registrando Doador"
         statusView.networkingClosure = { (closure:(success: Bool, message: String) -> ()) in
-            WebServiceOperations.newDonnor(token, name: name, address: address, phone: phone, email: mail, CPF: cpf, bloodType: BloodType(type: bType, rh: bRH), closure)
+            WebServiceOperations.newDonor(token, name: name, address: address, phone: phone, email: email, CPF: cpf, bloodType: bt, completionHandler: closure)
         }
     }
     

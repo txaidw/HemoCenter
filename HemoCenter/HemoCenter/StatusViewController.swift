@@ -9,8 +9,8 @@
 import UIKit
 
 class StatusViewController: UIViewController {
-    var networkingClosure:(((success: Bool, message: String) -> ())->())?
-    
+    var networkingClosure:((closure: (success: Bool, message: String) -> Void) ->  Void)?
+    var initialMessage:String?
     @IBOutlet weak var messageLogLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
@@ -20,17 +20,19 @@ class StatusViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
+        self.messageLogLabel.text = initialMessage
+        self.activityIndicator.startAnimating()
         delay(0.8) {
-            networkingClosure?{ [weak self] (success, message) -> () in
+            self.networkingClosure? { (success, message) -> Void in
                 if success {
-                    self?.messageLogLabel.text = message
+                    self.messageLogLabel.text = message
                 } else {
-                    self?.messageLogLabel.text = message
+                    self.messageLogLabel.text = message
                     AppDelegate.$.userKeychainToken = nil
                 }
                 
-                self?.activityIndicator.alpha = 0.0
-                self?.messageLogLabel.alpha = 1.0
+                self.activityIndicator.alpha = 0.0
+                self.messageLogLabel.alpha = 1.0
             }
         }
     }
