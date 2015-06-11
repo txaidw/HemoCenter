@@ -36,7 +36,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func loginButtonAction() {
-        performSegueWithIdentifier("loginSuccessful", sender: self)
+        activityIndicator.alpha = 1.0
+        
+        let user = userTextField.text
+        let password = passwordTextField.text
+        
+        WebServiceOperations.login(user, password: password) { [weak self] (success, message, authKey) -> Void in
+            if success {
+                self?.performSegueWithIdentifier("loginSuccessful", sender: self)
+            }
+            else {
+                print(message)
+            }
+        }
     }
     
     func keyboardWasShown(notification: NSNotification) {

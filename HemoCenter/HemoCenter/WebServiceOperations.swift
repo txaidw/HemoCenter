@@ -17,30 +17,30 @@ class WebServiceOperations: NSObject {
     
     static private let WEBSERVICE_URL = "http://ec2-52-7-220-135.compute-1.amazonaws.com/hemocentro/api/index.php"
     
-    class func login(user: String, password: String, completionHandler: (sucess: Bool, message: String, authKey: String?) -> Void) {
+    class func login(user: String, password: String, completionHandler: (success: Bool, message: String, authKey: String?) -> Void) {
         let values = [
             "operation" : 1,
             "username" : user,
             "password" : password
         ]
         WebServiceOperations.request(values, completionHandler: { (JSON, connectionError) -> Void in
-            var sucess = false
+            var success = false
             var message = ""
             var authKey = ""
             if let connectionError = connectionError {
                 message = connectionError.localizedDescription
             } else if let JSON = JSON {
                 if JSON.valueForKey("status") as! Int == 1 {
-                    sucess = true
+                    success = true
                     authKey = JSON.valueForKey("key") as! String
                 }
                 message = JSON.valueForKey("msg") as! String
             }
-            completionHandler(sucess: sucess, message: message, authKey: authKey)
+            completionHandler(success: success, message: message, authKey: authKey)
         })
     }
     
-    class func newDonator(authKey: String, name: String, address: String, phone1: Int, phone2: Int, email: String, CPF: Int, bloodType: BloodType, completionHandler: (sucess: Bool, message: String) -> Void) {
+    class func newDonator(authKey: String, name: String, address: String, phone1: Int, phone2: Int, email: String, CPF: Int, bloodType: BloodType, completionHandler: (success: Bool, message: String) -> Void) {
         let values = [
             "operation" : 2,
             "key" : authKey,
@@ -53,21 +53,21 @@ class WebServiceOperations: NSObject {
             "blood_type" : bloodType.rawValue
         ]
         WebServiceOperations.request(values, completionHandler: { (JSON, connectionError) -> Void in
-            var sucess = false
+            var success = false
             var message = ""
             if let connectionError = connectionError {
                 message = connectionError.localizedDescription
             } else if let JSON = JSON {
                 if JSON.valueForKey("status") as! Int == 1 {
-                    sucess = true
+                    success = true
                 }
                 message = JSON.valueForKey("msg") as! String
             }
-            completionHandler(sucess: sucess, message: message)
+            completionHandler(success: success, message: message)
         })
     }
     
-    class func newDonation(authKey: String, CPF: Int, CNPJ: Int, bloodType: BloodType, amountMl: Float, date: String, completionHandler: (sucess: Bool, message: String) -> Void) {
+    class func newDonation(authKey: String, CPF: Int, CNPJ: Int, bloodType: BloodType, amountMl: Float, date: String, completionHandler: (success: Bool, message: String) -> Void) {
         let values = [
             "operation": 3,
             "key": authKey,
@@ -78,21 +78,21 @@ class WebServiceOperations: NSObject {
             "blood_type": bloodType.rawValue
         ]
         WebServiceOperations.request(values, completionHandler: { (JSON, connectionError) -> Void in
-            var sucess = false
+            var success = false
             var message = ""
             if let connectionError = connectionError {
                 message = connectionError.localizedDescription
             } else if let JSON = JSON {
                 if JSON.valueForKey("status") as! Int == 1 {
-                    sucess = true
+                    success = true
                 }
                 message = JSON.valueForKey("msg") as! String
             }
-            completionHandler(sucess: sucess, message: message)
+            completionHandler(success: success, message: message)
         })
     }
     
-    class func newUser(name: String, username: String, password: String, manager: Bool, email: String, completionHandler: (sucess: Bool, message: String) -> Void) {
+    class func newUser(name: String, username: String, password: String, manager: Bool, email: String, completionHandler: (success: Bool, message: String) -> Void) {
         let values = [
             "operation" : 10,
             "name" : name,
@@ -102,17 +102,17 @@ class WebServiceOperations: NSObject {
             "email" : email
         ]
         WebServiceOperations.request(values, completionHandler: { (JSON, connectionError) -> Void in
-            var sucess = false
+            var success = false
             var message = ""
             if let connectionError = connectionError {
                 message = connectionError.localizedDescription
             } else if let JSON = JSON {
                 if JSON.valueForKey("status") as! Int == 1 {
-                    sucess = true
+                    success = true
                 }
                 message = JSON.valueForKey("msg") as! String
             }
-            completionHandler(sucess: sucess, message: message)
+            completionHandler(success: success, message: message)
         })
     }
 
