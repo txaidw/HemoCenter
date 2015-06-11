@@ -10,6 +10,13 @@ import UIKit
 
 class NewDonnorTableViewController: UITableViewController {
 
+    @IBOutlet weak var nome: UITextField!
+    @IBOutlet weak var cpf: UITextField!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var endereço: UITextField!
+    @IBOutlet weak var telefone: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

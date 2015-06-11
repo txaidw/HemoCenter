@@ -67,53 +67,6 @@
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="KWl-YM-8rg">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KWl-YM-8rg" id="pMf-IA-XF8">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6EF-Dh-J3T">
-                                                    <rect key="frame" x="16" y="8" width="568" height="44"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sobrenome:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTb-cs-SSi">
-                                                            <rect key="frame" x="0.0" y="12" width="94" height="21"/>
-                                                            <animations/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" red="0.92140102386474609" green="0.90458077192306519" blue="0.895133376121521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QY6-r0-Js9">
-                                                            <rect key="frame" x="170" y="4" width="398" height="36"/>
-                                                            <animations/>
-                                                            <color key="backgroundColor" red="0.92140102386474609" green="0.90458077192306519" blue="0.895133376121521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="textColor"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                            <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="namePhonePad" returnKeyType="next"/>
-                                                        </textField>
-                                                    </subviews>
-                                                    <animations/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="centerY" secondItem="aTb-cs-SSi" secondAttribute="centerY" id="Ef8-j5-f42"/>
-                                                        <constraint firstAttribute="bottom" secondItem="QY6-r0-Js9" secondAttribute="bottom" constant="4" id="UEc-2e-jfY"/>
-                                                        <constraint firstItem="QY6-r0-Js9" firstAttribute="top" secondItem="6EF-Dh-J3T" secondAttribute="top" constant="4" id="hRZ-PL-1bo"/>
-                                                        <constraint firstAttribute="trailing" secondItem="QY6-r0-Js9" secondAttribute="trailing" id="jXn-Ev-nir"/>
-                                                        <constraint firstItem="aTb-cs-SSi" firstAttribute="leading" secondItem="6EF-Dh-J3T" secondAttribute="leading" id="sCJ-5c-ffL"/>
-                                                        <constraint firstItem="QY6-r0-Js9" firstAttribute="width" secondItem="6EF-Dh-J3T" secondAttribute="width" multiplier="0.7" id="uyI-wq-vsJ"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                            <animations/>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="6EF-Dh-J3T" secondAttribute="trailing" constant="16" id="1iH-do-cmh"/>
-                                                <constraint firstItem="6EF-Dh-J3T" firstAttribute="top" secondItem="pMf-IA-XF8" secondAttribute="top" constant="8" id="6TK-j4-xTs"/>
-                                                <constraint firstAttribute="bottom" secondItem="6EF-Dh-J3T" secondAttribute="bottom" constant="8" id="O8s-C5-1kd"/>
-                                                <constraint firstItem="6EF-Dh-J3T" firstAttribute="leading" secondItem="pMf-IA-XF8" secondAttribute="leading" constant="16" id="qfa-Wq-UEi"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="Ehn-Mp-CL2">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ehn-Mp-CL2" id="7n8-2F-Czl">
@@ -462,6 +415,13 @@
                             <color key="tintColor" red="0.87722986936569214" green="0.17274713516235352" blue="0.14331340789794922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cpf" destination="hT6-o6-vAZ" id="NJE-yy-5tR"/>
+                        <outlet property="email" destination="ITZ-y0-Bz3" id="onb-np-nN8"/>
+                        <outlet property="endereço" destination="Car-YI-GSw" id="gPf-Nd-02F"/>
+                        <outlet property="nome" destination="d35-X8-oNi" id="azg-zK-BXz"/>
+                        <outlet property="telefone" destination="4D2-fY-sOx" id="tvx-sv-ADW"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TG-5p-ZTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

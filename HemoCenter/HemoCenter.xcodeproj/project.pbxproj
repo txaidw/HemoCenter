@@ -28,6 +28,37 @@
 		E9D8E64F1B23A1BE0003A526 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8E64E1B23A1BE0003A526 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E95A20401B2959ED006222F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71EF12331B293E9D00FA6D2D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		E95A20421B2959ED006222F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71EF12331B293E9D00FA6D2D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		E95A20441B2959ED006222F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71EF12331B293E9D00FA6D2D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		E95A20461B2959ED006222F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71EF12331B293E9D00FA6D2D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		71EF12461B293EB000FA6D2D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -50,8 +81,6 @@
 		E9174EDA1B0A2D34000F57A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9174EDC1B0A2D34000F57A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E9174EDF1B0A2D34000F57A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E9174EEA1B0A2D35000F57A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9174EEB1B0A2D35000F57A5 /* HemoCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemoCenterTests.swift; sourceTree = "<group>"; };
 		E9296F581B1DF7C1000D5DC7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E943FC5A1B1D503400F5A52D /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 		E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				E9174ED21B0A2D34000F57A5 /* HemoCenter */,
-				E9174EE81B0A2D35000F57A5 /* HemoCenterTests */,
 				E9174ED11B0A2D34000F57A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,23 +147,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E9174EE81B0A2D35000F57A5 /* HemoCenterTests */ = {
-			isa = PBXGroup;
-			children = (
-				E9174EEB1B0A2D35000F57A5 /* HemoCenterTests.swift */,
-				E9174EE91B0A2D35000F57A5 /* Supporting Files */,
-			);
-			path = HemoCenterTests;
-			sourceTree = "<group>";
-		};
-		E9174EE91B0A2D35000F57A5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E9174EEA1B0A2D35000F57A5 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		E943FC5C1B1D503800F5A52D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +158,17 @@
 				E9D8E64B1B239DA40003A526 /* Reports */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E95A203A1B2959E7006222F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E95A20411B2959ED006222F1 /* Alamofire.framework */,
+				E95A20431B2959ED006222F1 /* Alamofire.framework */,
+				E95A20451B2959ED006222F1 /* Alamofire iOS Tests.xctest */,
+				E95A20471B2959ED006222F1 /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E9CD60F51B294918007E9540 /* Model Access */ = {
@@ -252,12 +274,49 @@
 			mainGroup = E9174EC71B0A2D34000F57A5;
 			productRefGroup = E9174ED11B0A2D34000F57A5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E95A203A1B2959E7006222F1 /* Products */;
+					ProjectRef = 71EF12331B293E9D00FA6D2D /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E9174ECF1B0A2D34000F57A5 /* HemoCenter */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E95A20411B2959ED006222F1 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = E95A20401B2959ED006222F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E95A20431B2959ED006222F1 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = E95A20421B2959ED006222F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E95A20451B2959ED006222F1 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = E95A20441B2959ED006222F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E95A20471B2959ED006222F1 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = E95A20461B2959ED006222F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E9174ECE1B0A2D34000F57A5 /* Resources */ = {
