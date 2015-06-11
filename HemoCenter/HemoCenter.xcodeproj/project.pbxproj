@@ -12,7 +12,6 @@
 		E9174EDB1B0A2D34000F57A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9174ED91B0A2D34000F57A5 /* Main.storyboard */; };
 		E9174EDD1B0A2D34000F57A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9174EDC1B0A2D34000F57A5 /* Images.xcassets */; };
 		E9174EE01B0A2D34000F57A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9174EDE1B0A2D34000F57A5 /* LaunchScreen.xib */; };
-		E9174EEC1B0A2D35000F57A5 /* HemoCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9174EEB1B0A2D35000F57A5 /* HemoCenterTests.swift */; };
 		E9296F591B1DF7C1000D5DC7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9296F581B1DF7C1000D5DC7 /* LoginViewController.swift */; };
 		E943FC5B1B1D503400F5A52D /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943FC5A1B1D503400F5A52D /* MasterTableViewController.swift */; };
 		E943FC5E1B1D511A00F5A52D /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */; };
@@ -27,16 +26,6 @@
 		E9D8E64A1B239DA00003A526 /* HemocenterReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8E6491B239DA00003A526 /* HemocenterReportsViewController.swift */; };
 		E9D8E64F1B23A1BE0003A526 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8E64E1B23A1BE0003A526 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E9174EE61B0A2D35000F57A5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9174EC81B0A2D34000F57A5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E9174ECF1B0A2D34000F57A5;
-			remoteInfo = HemoCenter;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		71EF12461B293EB000FA6D2D /* Embed Frameworks */ = {
@@ -60,7 +49,6 @@
 		E9174EDA1B0A2D34000F57A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9174EDC1B0A2D34000F57A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E9174EDF1B0A2D34000F57A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E9174EE51B0A2D35000F57A5 /* HemoCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HemoCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9174EEA1B0A2D35000F57A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9174EEB1B0A2D35000F57A5 /* HemoCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemoCenterTests.swift; sourceTree = "<group>"; };
 		E9296F581B1DF7C1000D5DC7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -86,13 +74,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9174EE21B0A2D35000F57A5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -109,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				E9174ED01B0A2D34000F57A5 /* HemoCenter.app */,
-				E9174EE51B0A2D35000F57A5 /* HemoCenterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,24 +223,6 @@
 			productReference = E9174ED01B0A2D34000F57A5 /* HemoCenter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E9174EE41B0A2D35000F57A5 /* HemoCenterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E9174EF21B0A2D35000F57A5 /* Build configuration list for PBXNativeTarget "HemoCenterTests" */;
-			buildPhases = (
-				E9174EE11B0A2D35000F57A5 /* Sources */,
-				E9174EE21B0A2D35000F57A5 /* Frameworks */,
-				E9174EE31B0A2D35000F57A5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E9174EE71B0A2D35000F57A5 /* PBXTargetDependency */,
-			);
-			name = HemoCenterTests;
-			productName = HemoCenterTests;
-			productReference = E9174EE51B0A2D35000F57A5 /* HemoCenterTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -273,10 +235,6 @@
 				TargetAttributes = {
 					E9174ECF1B0A2D34000F57A5 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					E9174EE41B0A2D35000F57A5 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = E9174ECF1B0A2D34000F57A5;
 					};
 				};
 			};
@@ -294,7 +252,6 @@
 			projectRoot = "";
 			targets = (
 				E9174ECF1B0A2D34000F57A5 /* HemoCenter */,
-				E9174EE41B0A2D35000F57A5 /* HemoCenterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -307,13 +264,6 @@
 				E9174EDB1B0A2D34000F57A5 /* Main.storyboard in Resources */,
 				E9174EE01B0A2D34000F57A5 /* LaunchScreen.xib in Resources */,
 				E9174EDD1B0A2D34000F57A5 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9174EE31B0A2D35000F57A5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,23 +292,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9174EE11B0A2D35000F57A5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E9174EEC1B0A2D35000F57A5 /* HemoCenterTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E9174EE71B0A2D35000F57A5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E9174ECF1B0A2D34000F57A5 /* HemoCenter */;
-			targetProxy = E9174EE61B0A2D35000F57A5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E9174ED91B0A2D34000F57A5 /* Main.storyboard */ = {
@@ -485,42 +419,6 @@
 			};
 			name = Release;
 		};
-		E9174EF31B0A2D35000F57A5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = HemoCenterTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HemoCenter.app/HemoCenter";
-			};
-			name = Debug;
-		};
-		E9174EF41B0A2D35000F57A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = HemoCenterTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HemoCenter.app/HemoCenter";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -538,15 +436,6 @@
 			buildConfigurations = (
 				E9174EF01B0A2D35000F57A5 /* Debug */,
 				E9174EF11B0A2D35000F57A5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E9174EF21B0A2D35000F57A5 /* Build configuration list for PBXNativeTarget "HemoCenterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E9174EF31B0A2D35000F57A5 /* Debug */,
-				E9174EF41B0A2D35000F57A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

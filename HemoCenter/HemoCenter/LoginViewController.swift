@@ -12,6 +12,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var messageLogLabel: UILabel!
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
@@ -37,17 +38,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func loginButtonAction() {
         activityIndicator.alpha = 1.0
-        
+        loginButton.alpha = 0.0
+        messageLogLabel.alpha = 0.0
+
         let user = userTextField.text
         let password = passwordTextField.text
         
         WebServiceOperations.login(user, password: password) { [weak self] (success, message, authKey) -> Void in
             if success {
                 self?.performSegueWithIdentifier("loginSuccessful", sender: self)
+                self?.messageLogLabel.text = message
+            } else {
+                self?.messageLogLabel.text = message
             }
-            else {
-                print(message)
-            }
+            self?.activityIndicator.alpha = 0.0
+            self?.loginButton.alpha = 1.0
+            self?.messageLogLabel.alpha = 1.0
         }
     }
     
