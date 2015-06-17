@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewDonnorTableViewController: UITableViewController {
+class NewDonorTableViewController: UITableViewController {
 
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var cpf: UITextField!
@@ -40,9 +40,10 @@ class NewDonnorTableViewController: UITableViewController {
         let cpf = self.cpf.text
         let bt = BloodType(type: bType.selectedSegmentIndex, rh: bRH.selectedSegmentIndex)!
         let statusView = segue.destinationViewController as! StatusViewController
+        let donor = Donor(CPF: cpf, name: name, email: email, bloodType: bt, phone: phone, address: address)
         statusView.initialMessage = "Registrando Doador"
         statusView.networkingClosure = { (closure:(success: Bool, message: String) -> ()) in
-            WebServiceOperations.newDonor(token, name: name, address: address, phone: phone, email: email, CPF: cpf, bloodType: bt, completionHandler: closure)
+            WebServiceOperations.newDonor(token, donor: donor, completionHandler: closure)
         }
     }
     

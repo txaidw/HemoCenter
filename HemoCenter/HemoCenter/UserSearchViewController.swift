@@ -8,10 +8,23 @@
 
 import UIKit
 
+protocol SearchPopoverDelegate:class {
+    func returnedPopoverSelection(index:Int)
+}
+
 class UserSearchViewController: UITableViewController, UISearchResultsUpdating {
-    let tableData = ["One","Two","Three","Twenty-One"]
+    var tableData:[Donor] = {
+        let a = Donor(CPF: "123", name: "teste 1", email: "", bloodType: BloodType(type: 0, rh: 0)!, phone: 123, address: "132")
+        let b = Donor(CPF: "456", name: "teste 2", email: "", bloodType: BloodType(type: 0, rh: 0)!, phone: 123, address: "132")
+        let c = Donor(CPF: "789", name: "teste 3", email: "", bloodType: BloodType(type: 0, rh: 0)!, phone: 123, address: "132")
+        
+        let example = [a, b, c]
+        return example
+    }()
     var filteredTableData = [String]()
     var resultSearchController = UISearchController()
+    
+    weak var delegate:SearchPopoverDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +47,11 @@ class UserSearchViewController: UITableViewController, UISearchResultsUpdating {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.delegate?.returnedPopoverSelection(indexPath.row)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     // MARK: - Table view data source
@@ -63,10 +81,9 @@ class UserSearchViewController: UITableViewController, UISearchResultsUpdating {
             cell.textLabel?.text = filteredTableData[indexPath.row]
             
             return cell
-        }
-        else {
-            cell.textLabel?.text = tableData[indexPath.row]
-            
+        } else {
+            cell.textLabel?.text = tableData[indexPath.row].name
+            cell.detailTextLabel?.text = tableData[indexPath.row].CPF
             return cell
         }
     }

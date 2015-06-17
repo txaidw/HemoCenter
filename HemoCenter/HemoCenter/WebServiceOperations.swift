@@ -8,10 +8,6 @@
 
 import Alamofire
 
-enum BloodType: Int {
-    case Apos = 1, Aneg, Bpos, Bneg, ABpos, ABneg, Opos, Oneg
-}
-
 class WebServiceOperations {
     
     static private let WEBSERVICE_URL = "http://ec2-52-7-220-135.compute-1.amazonaws.com/hemocentro/api/index.php"

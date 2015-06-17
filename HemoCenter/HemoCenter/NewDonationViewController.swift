@@ -8,8 +8,9 @@
 
 import UIKit
 
-class NewDonationViewController: UIViewController {
+class NewDonationViewController: UIViewController, SearchPopoverDelegate {
     
+    var donors:[Donor]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,24 +22,33 @@ class NewDonationViewController: UIViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
+    @IBAction func DonorButtonAction(sender: UIButton) {
+        sender.enabled = false
+        
+        WebServiceOperations.getAllDonors(AppDelegate.$.userKeychainToken!, completionHandler: { (success, message, donors) -> Void in
+            if success {
+                self.performSegueWithIdentifier("DonorButtonSegue", sender: donors)
+                self.donors = donors
+            } else {
+                // Warning
+            }
+        })
+    }
+    
+    func returnedPopoverSelection(index: Int) {
+        print(donors![index].name)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        let token = AppDelegate.$.userKeychainToken!
-//        let name = self.name.text
-//        let address = self.address.text
-//        let phone = self.phone.text.toInt()!
-//        let email = self.mail.text
-//        let cpf = self.cpf.text
-//        let bt = BloodType(type: bType.selectedSegmentIndex, rh: bRH.selectedSegmentIndex)!
-//        let statusView = segue.destinationViewController as! StatusViewController
-//        statusView.initialMessage = "Registrando Doador"
-//        statusView.networkingClosure = { (closure:(success: Bool, message: String) -> ()) in
-//            WebServiceOperations.newDonor(token, name: name, address: address, phone: phone, email: email, CPF: cpf, bloodType: bt, completionHandler: closure)
-//        }
+        if let donors = sender as? [Donor], let destination = segue.destinationViewController as? UserSearchViewController {
+            destination.tableData = donors
+            destination.delegate = self
+        }
     }
     
 }

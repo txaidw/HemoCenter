@@ -26,7 +26,7 @@
 		E943FC5E1B1D511A00F5A52D /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */; };
 		E95A20491B29658C006222F1 /* BloodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A20481B29658C006222F1 /* BloodType.swift */; };
 		E95A204B1B2969E1006222F1 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A204A1B2969E1006222F1 /* StatusViewController.swift */; };
-		E9B885AF1B224DA5002B9369 /* NewDonnorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B885AE1B224DA5002B9369 /* NewDonnorTableViewController.swift */; };
+		E9B885AF1B224DA5002B9369 /* NewDonorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B885AE1B224DA5002B9369 /* NewDonorTableViewController.swift */; };
 		E9CD60EF1B2943CD007E9540 /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD60EE1B2943CD007E9540 /* UserSearchViewController.swift */; };
 		E9CD60F71B295229007E9540 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD60F61B295229007E9540 /* Utilities.swift */; };
 		E9D8E63C1B239B650003A526 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8E63B1B239B650003A526 /* TransactionsViewController.swift */; };
@@ -104,7 +104,7 @@
 		E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		E95A20481B29658C006222F1 /* BloodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodType.swift; sourceTree = "<group>"; };
 		E95A204A1B2969E1006222F1 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
-		E9B885AE1B224DA5002B9369 /* NewDonnorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDonnorTableViewController.swift; sourceTree = "<group>"; };
+		E9B885AE1B224DA5002B9369 /* NewDonorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDonorTableViewController.swift; sourceTree = "<group>"; };
 		E9CD60EE1B2943CD007E9540 /* UserSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
 		E9CD60F61B295229007E9540 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		E9D8E63B1B239B650003A526 /* TransactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +129,7 @@
 		7120C32D1B32036000EC75A0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E95A20481B29658C006222F1 /* BloodType.swift */,
 				7120C3461B3203F900EC75A0 /* Donation.swift */,
 				7120C3471B3203F900EC75A0 /* Donor.swift */,
 				7120C3481B3203F900EC75A0 /* Employee.swift */,
@@ -162,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				7120C32D1B32036000EC75A0 /* Model */,
-				E95A20481B29658C006222F1 /* BloodType.swift */,
 				E943FC5C1B1D503800F5A52D /* Controllers */,
 				E9174ED51B0A2D34000F57A5 /* AppDelegate.swift */,
 				E9174ED91B0A2D34000F57A5 /* Main.storyboard */,
@@ -226,7 +226,7 @@
 		E9D8E6421B239BFC0003A526 /* Entries */ = {
 			isa = PBXGroup;
 			children = (
-				E9B885AE1B224DA5002B9369 /* NewDonnorTableViewController.swift */,
+				E9B885AE1B224DA5002B9369 /* NewDonorTableViewController.swift */,
 				E9D8E6431B239C2E0003A526 /* NewDonationViewController.swift */,
 			);
 			name = Entries;
@@ -388,8 +388,11 @@
 				E9D8E6481B239D950003A526 /* HospitalReportsViewController.swift in Sources */,
 				7120C3541B3203F900EC75A0 /* Instituition.swift in Sources */,
 				E9CD60EF1B2943CD007E9540 /* UserSearchViewController.swift in Sources */,
+				7120C3521B3203F900EC75A0 /* Hemocenter.swift in Sources */,
+				7120C3531B3203F900EC75A0 /* Hospital.swift in Sources */,
 				E9D8E6441B239C2E0003A526 /* NewDonationViewController.swift in Sources */,
-				E9B885AF1B224DA5002B9369 /* NewDonnorTableViewController.swift in Sources */,
+				7120C34F1B3203F900EC75A0 /* Donation.swift in Sources */,
+				E9B885AF1B224DA5002B9369 /* NewDonorTableViewController.swift in Sources */,
 				E9D8E64F1B23A1BE0003A526 /* AboutViewController.swift in Sources */,
 				E95A204B1B2969E1006222F1 /* StatusViewController.swift in Sources */,
 				E943FC5E1B1D511A00F5A52D /* SplitViewController.swift in Sources */,
