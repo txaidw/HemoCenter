@@ -12,6 +12,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var messageLogLabel: UILabel!
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
@@ -36,7 +37,32 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func loginButtonAction() {
-        performSegueWithIdentifier("loginSuccessful", sender: self)
+        activityIndicator.startAnimating()
+        activityIndicator.alpha = 1.0
+        loginButton.alpha = 0.0
+        messageLogLabel.alpha = 0.0
+
+        let user = userTextField.text
+        let password = passwordTextField.text
+        
+        WebServiceOperations.login(user, password: password) { [weak self] (success, message, authKey) -> Void in
+            delay(0.8) {
+                if success {
+                    self?.messageLogLabel.text = message
+                    AppDelegate.$.userKeychainToken = authKey
+                    delay(0.4) {
+                        self?.performSegueWithIdentifier("loginSuccessful", sender: self)
+                    }
+                } else {
+                    self?.messageLogLabel.text = message
+                    AppDelegate.$.userKeychainToken = nil
+                }
+                
+                self?.activityIndicator.alpha = 0.0
+                self?.loginButton.alpha = 1.0
+                self?.messageLogLabel.alpha = 1.0
+            }
+        }
     }
     
     func keyboardWasShown(notification: NSNotification) {
@@ -58,7 +84,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         let nextTag = textField.tag + 1
-
+        
         if nextTag == 4 {
             self.loginButtonAction()
             textField.resignFirstResponder()

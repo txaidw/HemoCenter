@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71EF12321B293E5E00FA6D2D /* WebServiceOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EF12311B293E5E00FA6D2D /* WebServiceOperations.swift */; };
 		E9174ED61B0A2D34000F57A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9174ED51B0A2D34000F57A5 /* AppDelegate.swift */; };
 		E9174EDB1B0A2D34000F57A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9174ED91B0A2D34000F57A5 /* Main.storyboard */; };
 		E9174EDD1B0A2D34000F57A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9174EDC1B0A2D34000F57A5 /* Images.xcassets */; };
 		E9174EE01B0A2D34000F57A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9174EDE1B0A2D34000F57A5 /* LaunchScreen.xib */; };
-		E9174EEC1B0A2D35000F57A5 /* HemoCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9174EEB1B0A2D35000F57A5 /* HemoCenterTests.swift */; };
 		E9296F591B1DF7C1000D5DC7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9296F581B1DF7C1000D5DC7 /* LoginViewController.swift */; };
 		E943FC5B1B1D503400F5A52D /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943FC5A1B1D503400F5A52D /* MasterTableViewController.swift */; };
 		E943FC5E1B1D511A00F5A52D /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */; };
 		E9B885AF1B224DA5002B9369 /* NewDonnorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B885AE1B224DA5002B9369 /* NewDonnorTableViewController.swift */; };
+		E9CD60EF1B2943CD007E9540 /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD60EE1B2943CD007E9540 /* UserSearchViewController.swift */; };
+		E9CD60F71B295229007E9540 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD60F61B295229007E9540 /* Utilities.swift */; };
 		E9D8E63C1B239B650003A526 /* HospitalToHospitalTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8E63B1B239B650003A526 /* HospitalToHospitalTransactionViewController.swift */; };
 		E9D8E63E1B239B8C0003A526 /* HospitalToHemocenterTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8E63D1B239B8C0003A526 /* HospitalToHemocenterTransactionViewController.swift */; };
 		E9D8E6401B239BA20003A526 /* HemocenterToHospitalTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8E63F1B239BA20003A526 /* HemocenterToHospitalTransactionViewController.swift */; };
@@ -27,29 +29,66 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E9174EE61B0A2D35000F57A5 /* PBXContainerItemProxy */ = {
+		711D1AC41B295AB200A04FB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E9174EC81B0A2D34000F57A5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E9174ECF1B0A2D34000F57A5;
-			remoteInfo = HemoCenter;
+			containerPortal = 71EF12331B293E9D00FA6D2D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		711D1AC61B295AB200A04FB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71EF12331B293E9D00FA6D2D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		711D1AC81B295AB200A04FB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71EF12331B293E9D00FA6D2D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		711D1ACA1B295AB200A04FB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71EF12331B293E9D00FA6D2D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		71EF12461B293EB000FA6D2D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		71EF12311B293E5E00FA6D2D /* WebServiceOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceOperations.swift; sourceTree = "<group>"; };
+		71EF12331B293E9D00FA6D2D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		E9174ED01B0A2D34000F57A5 /* HemoCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HemoCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9174ED41B0A2D34000F57A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9174ED51B0A2D34000F57A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9174EDA1B0A2D34000F57A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9174EDC1B0A2D34000F57A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E9174EDF1B0A2D34000F57A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E9174EE51B0A2D35000F57A5 /* HemoCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HemoCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9174EEA1B0A2D35000F57A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9174EEB1B0A2D35000F57A5 /* HemoCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemoCenterTests.swift; sourceTree = "<group>"; };
 		E9296F581B1DF7C1000D5DC7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E943FC5A1B1D503400F5A52D /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 		E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		E9B885AE1B224DA5002B9369 /* NewDonnorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDonnorTableViewController.swift; sourceTree = "<group>"; };
+		E9CD60EE1B2943CD007E9540 /* UserSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
+		E9CD60F61B295229007E9540 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		E9D8E63B1B239B650003A526 /* HospitalToHospitalTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalToHospitalTransactionViewController.swift; sourceTree = "<group>"; };
 		E9D8E63D1B239B8C0003A526 /* HospitalToHemocenterTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalToHemocenterTransactionViewController.swift; sourceTree = "<group>"; };
 		E9D8E63F1B239BA20003A526 /* HemocenterToHospitalTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HemocenterToHospitalTransactionViewController.swift; sourceTree = "<group>"; };
@@ -68,16 +107,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9174EE21B0A2D35000F57A5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		711D1ABE1B295AB200A04FB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				711D1AC51B295AB200A04FB1 /* Alamofire.framework */,
+				711D1AC71B295AB200A04FB1 /* Alamofire.framework */,
+				711D1AC91B295AB200A04FB1 /* Alamofire iOS Tests.xctest */,
+				711D1ACB1B295AB200A04FB1 /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E9174EC71B0A2D34000F57A5 = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				E9174ED01B0A2D34000F57A5 /* HemoCenter.app */,
-				E9174EE51B0A2D35000F57A5 /* HemoCenterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,7 +154,9 @@
 		E9174ED31B0A2D34000F57A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E9CD60F61B295229007E9540 /* Utilities.swift */,
 				E9174ED41B0A2D34000F57A5 /* Info.plist */,
+				71EF12331B293E9D00FA6D2D /* Alamofire.xcodeproj */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -137,6 +181,7 @@
 		E943FC5C1B1D503800F5A52D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E9CD60F51B294918007E9540 /* Model Access */,
 				E9D8E64C1B239DD80003A526 /* Navigation */,
 				E9D8E64D1B239DE10003A526 /* General */,
 				E9D8E6421B239BFC0003A526 /* Entries */,
@@ -144,6 +189,14 @@
 				E9D8E64B1B239DA40003A526 /* Reports */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E9CD60F51B294918007E9540 /* Model Access */ = {
+			isa = PBXGroup;
+			children = (
+				71EF12311B293E5E00FA6D2D /* WebServiceOperations.swift */,
+			);
+			name = "Model Access";
 			sourceTree = "<group>";
 		};
 		E9D8E6411B239BA80003A526 /* Transactions */ = {
@@ -187,6 +240,7 @@
 		E9D8E64D1B239DE10003A526 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				E9CD60EE1B2943CD007E9540 /* UserSearchViewController.swift */,
 				E9296F581B1DF7C1000D5DC7 /* LoginViewController.swift */,
 				E9D8E64E1B23A1BE0003A526 /* AboutViewController.swift */,
 			);
@@ -203,6 +257,7 @@
 				E9174ECC1B0A2D34000F57A5 /* Sources */,
 				E9174ECD1B0A2D34000F57A5 /* Frameworks */,
 				E9174ECE1B0A2D34000F57A5 /* Resources */,
+				71EF12461B293EB000FA6D2D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,39 +268,18 @@
 			productReference = E9174ED01B0A2D34000F57A5 /* HemoCenter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E9174EE41B0A2D35000F57A5 /* HemoCenterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E9174EF21B0A2D35000F57A5 /* Build configuration list for PBXNativeTarget "HemoCenterTests" */;
-			buildPhases = (
-				E9174EE11B0A2D35000F57A5 /* Sources */,
-				E9174EE21B0A2D35000F57A5 /* Frameworks */,
-				E9174EE31B0A2D35000F57A5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E9174EE71B0A2D35000F57A5 /* PBXTargetDependency */,
-			);
-			name = HemoCenterTests;
-			productName = HemoCenterTests;
-			productReference = E9174EE51B0A2D35000F57A5 /* HemoCenterTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E9174EC81B0A2D34000F57A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = TDW;
 				TargetAttributes = {
 					E9174ECF1B0A2D34000F57A5 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					E9174EE41B0A2D35000F57A5 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = E9174ECF1B0A2D34000F57A5;
 					};
 				};
 			};
@@ -260,13 +294,49 @@
 			mainGroup = E9174EC71B0A2D34000F57A5;
 			productRefGroup = E9174ED11B0A2D34000F57A5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 711D1ABE1B295AB200A04FB1 /* Products */;
+					ProjectRef = 71EF12331B293E9D00FA6D2D /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E9174ECF1B0A2D34000F57A5 /* HemoCenter */,
-				E9174EE41B0A2D35000F57A5 /* HemoCenterTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		711D1AC51B295AB200A04FB1 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 711D1AC41B295AB200A04FB1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		711D1AC71B295AB200A04FB1 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 711D1AC61B295AB200A04FB1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		711D1AC91B295AB200A04FB1 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 711D1AC81B295AB200A04FB1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		711D1ACB1B295AB200A04FB1 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 711D1ACA1B295AB200A04FB1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E9174ECE1B0A2D34000F57A5 /* Resources */ = {
@@ -276,13 +346,6 @@
 				E9174EDB1B0A2D34000F57A5 /* Main.storyboard in Resources */,
 				E9174EE01B0A2D34000F57A5 /* LaunchScreen.xib in Resources */,
 				E9174EDD1B0A2D34000F57A5 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9174EE31B0A2D35000F57A5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,10 +361,13 @@
 				E943FC5B1B1D503400F5A52D /* MasterTableViewController.swift in Sources */,
 				E9174ED61B0A2D34000F57A5 /* AppDelegate.swift in Sources */,
 				E9D8E64A1B239DA00003A526 /* HemocenterReportsViewController.swift in Sources */,
+				E9CD60F71B295229007E9540 /* Utilities.swift in Sources */,
 				E9296F591B1DF7C1000D5DC7 /* LoginViewController.swift in Sources */,
+				71EF12321B293E5E00FA6D2D /* WebServiceOperations.swift in Sources */,
 				E9D8E6401B239BA20003A526 /* HemocenterToHospitalTransactionViewController.swift in Sources */,
 				E9D8E63E1B239B8C0003A526 /* HospitalToHemocenterTransactionViewController.swift in Sources */,
 				E9D8E6481B239D950003A526 /* HospitalReportsViewController.swift in Sources */,
+				E9CD60EF1B2943CD007E9540 /* UserSearchViewController.swift in Sources */,
 				E9D8E6441B239C2E0003A526 /* NewDonationTableViewController.swift in Sources */,
 				E9B885AF1B224DA5002B9369 /* NewDonnorTableViewController.swift in Sources */,
 				E9D8E64F1B23A1BE0003A526 /* AboutViewController.swift in Sources */,
@@ -309,23 +375,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9174EE11B0A2D35000F57A5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E9174EEC1B0A2D35000F57A5 /* HemoCenterTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E9174EE71B0A2D35000F57A5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E9174ECF1B0A2D34000F57A5 /* HemoCenter */;
-			targetProxy = E9174EE61B0A2D35000F57A5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E9174ED91B0A2D34000F57A5 /* Main.storyboard */ = {
@@ -452,40 +502,6 @@
 			};
 			name = Release;
 		};
-		E9174EF31B0A2D35000F57A5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = HemoCenterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HemoCenter.app/HemoCenter";
-			};
-			name = Debug;
-		};
-		E9174EF41B0A2D35000F57A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = HemoCenterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HemoCenter.app/HemoCenter";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -503,15 +519,6 @@
 			buildConfigurations = (
 				E9174EF01B0A2D35000F57A5 /* Debug */,
 				E9174EF11B0A2D35000F57A5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E9174EF21B0A2D35000F57A5 /* Build configuration list for PBXNativeTarget "HemoCenterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E9174EF31B0A2D35000F57A5 /* Debug */,
-				E9174EF41B0A2D35000F57A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
