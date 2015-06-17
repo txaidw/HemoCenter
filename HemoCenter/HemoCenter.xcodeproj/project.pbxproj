@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7120C34F1B3203F900EC75A0 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120C3461B3203F900EC75A0 /* Donation.swift */; };
+		7120C3501B3203F900EC75A0 /* Donor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120C3471B3203F900EC75A0 /* Donor.swift */; };
+		7120C3511B3203F900EC75A0 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120C3481B3203F900EC75A0 /* Employee.swift */; };
+		7120C3521B3203F900EC75A0 /* Hemocenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120C3491B3203F900EC75A0 /* Hemocenter.swift */; };
+		7120C3531B3203F900EC75A0 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120C34A1B3203F900EC75A0 /* Hospital.swift */; };
+		7120C3541B3203F900EC75A0 /* Instituition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120C34B1B3203F900EC75A0 /* Instituition.swift */; };
+		7120C3551B3203F900EC75A0 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120C34C1B3203F900EC75A0 /* Manager.swift */; };
+		7120C3561B3203F900EC75A0 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120C34D1B3203F900EC75A0 /* Transaction.swift */; };
+		7120C3571B3203F900EC75A0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120C34E1B3203F900EC75A0 /* User.swift */; };
 		71EF12321B293E5E00FA6D2D /* WebServiceOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EF12311B293E5E00FA6D2D /* WebServiceOperations.swift */; };
 		E9174ED61B0A2D34000F57A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9174ED51B0A2D34000F57A5 /* AppDelegate.swift */; };
 		E9174EDB1B0A2D34000F57A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9174ED91B0A2D34000F57A5 /* Main.storyboard */; };
@@ -73,6 +82,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7120C3461B3203F900EC75A0 /* Donation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		7120C3471B3203F900EC75A0 /* Donor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donor.swift; sourceTree = "<group>"; };
+		7120C3481B3203F900EC75A0 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		7120C3491B3203F900EC75A0 /* Hemocenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hemocenter.swift; sourceTree = "<group>"; };
+		7120C34A1B3203F900EC75A0 /* Hospital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
+		7120C34B1B3203F900EC75A0 /* Instituition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instituition.swift; sourceTree = "<group>"; };
+		7120C34C1B3203F900EC75A0 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		7120C34D1B3203F900EC75A0 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		7120C34E1B3203F900EC75A0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		71EF12311B293E5E00FA6D2D /* WebServiceOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceOperations.swift; sourceTree = "<group>"; };
 		71EF12331B293E9D00FA6D2D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		E9174ED01B0A2D34000F57A5 /* HemoCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HemoCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +126,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7120C32D1B32036000EC75A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7120C3461B3203F900EC75A0 /* Donation.swift */,
+				7120C3471B3203F900EC75A0 /* Donor.swift */,
+				7120C3481B3203F900EC75A0 /* Employee.swift */,
+				7120C3491B3203F900EC75A0 /* Hemocenter.swift */,
+				7120C34A1B3203F900EC75A0 /* Hospital.swift */,
+				7120C34B1B3203F900EC75A0 /* Instituition.swift */,
+				7120C34C1B3203F900EC75A0 /* Manager.swift */,
+				7120C34D1B3203F900EC75A0 /* Transaction.swift */,
+				7120C34E1B3203F900EC75A0 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		E9174EC71B0A2D34000F57A5 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +161,7 @@
 		E9174ED21B0A2D34000F57A5 /* HemoCenter */ = {
 			isa = PBXGroup;
 			children = (
+				7120C32D1B32036000EC75A0 /* Model */,
 				E95A20481B29658C006222F1 /* BloodType.swift */,
 				E943FC5C1B1D503800F5A52D /* Controllers */,
 				E9174ED51B0A2D34000F57A5 /* AppDelegate.swift */,
@@ -336,16 +371,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7120C3551B3203F900EC75A0 /* Manager.swift in Sources */,
+				7120C3501B3203F900EC75A0 /* Donor.swift in Sources */,
+				7120C3561B3203F900EC75A0 /* Transaction.swift in Sources */,
+				7120C3571B3203F900EC75A0 /* User.swift in Sources */,
 				E9D8E6461B239D890003A526 /* DonnorReportsViewController.swift in Sources */,
 				E9D8E63C1B239B650003A526 /* TransactionsViewController.swift in Sources */,
 				E943FC5B1B1D503400F5A52D /* MasterTableViewController.swift in Sources */,
 				E9174ED61B0A2D34000F57A5 /* AppDelegate.swift in Sources */,
 				E9D8E64A1B239DA00003A526 /* HemocenterReportsViewController.swift in Sources */,
 				E9CD60F71B295229007E9540 /* Utilities.swift in Sources */,
+				7120C3511B3203F900EC75A0 /* Employee.swift in Sources */,
 				E9296F591B1DF7C1000D5DC7 /* LoginViewController.swift in Sources */,
 				71EF12321B293E5E00FA6D2D /* WebServiceOperations.swift in Sources */,
 				E95A20491B29658C006222F1 /* BloodType.swift in Sources */,
 				E9D8E6481B239D950003A526 /* HospitalReportsViewController.swift in Sources */,
+				7120C3541B3203F900EC75A0 /* Instituition.swift in Sources */,
 				E9CD60EF1B2943CD007E9540 /* UserSearchViewController.swift in Sources */,
 				E9D8E6441B239C2E0003A526 /* NewDonationViewController.swift in Sources */,
 				E9B885AF1B224DA5002B9369 /* NewDonnorTableViewController.swift in Sources */,
