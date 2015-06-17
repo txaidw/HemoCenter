@@ -166,9 +166,9 @@ response .json format:				 				\{\
 \pard\pardeftab720
 
 \fs32 \cf0 \expnd0\expndtw0\kerning0
-	\{"id":"5","cnpj":"00000000000002","name":"Hospital Santa Clara"\},\
-	\{"id":"6","cnpj":"00000000000003","name":"Hospital Santa Cruz"\},\
-	\{"id":"7","cnpj":"00000000000004","name":"Hospital Anna Nery"\}
+	\{"id":"5","cnpj":"00.000.000/0001-02\'94,\'94name":"Hospital Santa Clara"\},\
+	\{"id":"6","cnpj":"00.000.000/0001-03\'94,\'94name":"Hospital Santa Cruz"\},\
+	\{"id":"7","cnpj":"00.000.000/0001-04\'94,\'94name":"Hospital Anna Nery"\}
 \fs36 \expnd0\expndtw0\kerning0
 \
 ]
@@ -257,8 +257,12 @@ response .json format:				 				\{\
 										\'93key\'94 : \'93uahsdu10231238dijo\'94,\
 										\'93cnpj_source\'94 : \'93123123123/0001-123\'94 ou \'93null\'94\
 										\'93cnpj_destination\'94 : \'93123123123/0001-123\'94\
-										\'93blood_type\'94 : N\
+										\'93qnt_blood\'94 : 100000\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b\fs48 \cf2 							(Quantidade dada sempre em ML)
+\b0\fs72 \cf0 \
+										\'93blood_type\'94 : N\
 
 \b\fs48 \cf2 (N \'e9 um numero de 1 at\'e9 8 onde temos 1-A_pos, 2-A_neg, 3-B_pos, 4-B_neg, 5-AB_pos, 6-AB_neg, 7-O_pos, 8-O_neg)
 \b0\fs72 \cf0 \
@@ -296,8 +300,11 @@ response .json format:				 				\{\
 							\{\
 									\'93msg\'94 : \'93Erro.\'94\
 									\'93status\'94 : 0\
-							\}	
-\f3\i\fs24 \cf3 \cb4 \
+							\}\
+\
+
+\i 10:Cadastrar usu\'e1rio
+\f3\fs24 \cf3 \cb4 \
 \
 \
 \
