@@ -1,5 +1,5 @@
 //
-//  HemocenterToHospitalTransactionViewController.swift
+//  HospitalToHospitalTransactionViewController.swift
 //  HemoCenter
 //
 //  Created by Txai Wieser on 06/06/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HemocenterToHospitalTransactionViewController: UIViewController {
+class TransactionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
