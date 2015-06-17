@@ -19,10 +19,12 @@
 \f0\fs72 \cf0 Operation Dictionary\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
 \cf0 Link de acesso a API: \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\tx19598\pardirnatural
 
-\b http://ec2-52-7-220-135.compute-1.amazonaws.com/hemocentro/api/index.php
+\b \cf0 http://ec2-52-7-220-135.compute-1.amazonaws.com/hemocentro/api/index.php
 \b0 \
-\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
 \
 
 \i 1 : Login
@@ -70,7 +72,7 @@
 										\'93phone2\'94 : \'931231231231\'94,\
 										\'93email\'94 : \'93lalala@hotmail.com\'94,\
 										\'93cpf\'94 : \'931231239912323\'94,\
-										\'93blood_type\'94 : N0\
+										\'93blood_type\'94 : N\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
 
 \b\fs48 \cf2 (N \'e9 um numero de 1 at\'e9 8 onde temos 1-A_pos, 2-A_neg, 3-B_pos, 4-B_neg, 5-AB_pos, 6-AB_neg, 7-O_pos, 8-O_neg)
@@ -249,7 +251,19 @@ response .json format:				 				\{\
 									\}								
 \i 			\
 9 : Realizar transa\'e7\'e3o\
-\
+						
+\i0   \{\
+										\'93operation\'94 : 9,\
+										\'93key\'94 : \'93uahsdu10231238dijo\'94,\
+										\'93cnpj_source\'94 : \'93123123123/0001-123\'94 ou \'93null\'94\
+										\'93cnpj_destination\'94 : \'93123123123/0001-123\'94\
+										\'93blood_type\'94 : N\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b\fs48 \cf2 (N \'e9 um numero de 1 at\'e9 8 onde temos 1-A_pos, 2-A_neg, 3-B_pos, 4-B_neg, 5-AB_pos, 6-AB_neg, 7-O_pos, 8-O_neg)
+\b0\fs72 \cf0 \
+							\}
+\i \
 10:Cadastrar usu\'e1rio\
 \pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
 \ls8\ilvl0
