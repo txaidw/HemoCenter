@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HospitalToHospitalTransactionViewController: UIViewController {
+class HospitalToHospitalTransactionViewController: UITableViewController {
     
     var hospitals:[Hospital]?
     
@@ -22,6 +22,8 @@ class HospitalToHospitalTransactionViewController: UIViewController {
                 self?.rightButton.enabled = true
                 self?.spinner.stopAnimating()
                 self?.directionButton.hidden = false
+            } else {
+                print(message)
             }
         })
     }
@@ -30,11 +32,26 @@ class HospitalToHospitalTransactionViewController: UIViewController {
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
+    @IBOutlet weak var bloodVolumeStepperValue: UIStepper!
+    @IBOutlet weak var bloodVolume: UILabel!
+    
+    @IBOutlet weak var save: UIBarButtonItem!
+    
+    
+    @IBOutlet weak var rh: UISegmentedControl!
+    @IBOutlet weak var type: UISegmentedControl!
+    
+    @IBOutlet weak var log: UILabel!
     
     var leftHospital:Hospital? {
         didSet {
             if let lh = leftHospital {
                 leftButton.setTitle(lh.name, forState: .Normal)
+                if rightHospital != nil && bloodVolumeStepperValue.value > 0 {
+                    save.enabled = true
+                } else {
+                    save.enabled = false
+                }
             }
         }
     }
@@ -43,24 +60,26 @@ class HospitalToHospitalTransactionViewController: UIViewController {
         didSet {
             if let rh = rightHospital {
                 rightButton.setTitle(rh.name, forState: .Normal)
+                if leftHospital != nil && bloodVolumeStepperValue.value > 0 {
+                    save.enabled = true
+                } else {
+                    save.enabled = false
+                }
             }
         }
     }
     
-    @IBAction func rightButtonAction(sender: UIButton) {
-        
-    }
     
-    @IBAction func leftButtonAction(sender: UIButton) {
-        
+    @IBAction func bloodVolumeStepper(sender: UIStepper) {
+        bloodVolume.text = String(stringInterpolationSegment: sender.value)
+        if leftHospital != nil && rightHospital != nil && sender.value > 0 {
+            save.enabled = true
+        } else {
+            save.enabled = false
+        }
     }
     
     @IBAction func directionButton(sender: UIButton) {
-        if sender.selected {
-            
-        } else {
-            
-        }
         sender.selected = !sender.selected
     }
     
@@ -77,5 +96,37 @@ class HospitalToHospitalTransactionViewController: UIViewController {
                 }
             }
         }
+        else if let dest = segue.destinationViewController as? StatusViewController {
+            var from:Hospital = leftHospital!
+            var to:Hospital = rightHospital!
+            if directionButton.selected {
+                from = rightHospital!
+                to = leftHospital!
+            }
+            let bt = BloodType(type: type.selectedSegmentIndex, rh: rh.selectedSegmentIndex)!
+            
+            let transaction = Transaction(sourceCNPJ: from.CNPJ, destinationCNPJ: to.CNPJ, bloodType: bt, amountMl: Int(bloodVolumeStepperValue.value))
+            let token = AppDelegate.$.userKeychainToken!
+            dest.initialMessage = "Registrando Transação"
+            dest.networkingClosure = { (closure:(success: Bool, message: String) -> ()) in
+                WebServiceOperations.newTransaction(token, transaction: transaction, completionHandler: closure)
+            }
+        }
     }
+    
+    
+    // MARK: - Table view data source
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundColor = UIColor.clearColor()
+    }
+    
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
+    }
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.001
+    }
+    
 }
