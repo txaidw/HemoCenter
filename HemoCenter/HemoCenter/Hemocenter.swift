@@ -7,4 +7,7 @@
 //
 
 class Hemocenter: Instituition {
+    override init(CNPJ: String, name: String) {
+        super.init(CNPJ: CNPJ, name: name)
+    }
 }

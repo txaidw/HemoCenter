@@ -1,8 +1,8 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 LucidaGrande;\f2\froman\fcharset0 Times-Roman;
-\f3\fnil\fcharset0 Menlo-Italic;}
+\f3\fnil\fcharset0 Menlo-Italic;\f4\fnil\fcharset0 Menlo-Bold;}
 {\colortbl;\red255\green255\blue255;\red255\green39\blue18;\red128\green128\blue128;\red247\green250\blue255;
-}
+\red0\green128\blue0;}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid1\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
 {\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid101\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
 {\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid201\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid202\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid203\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid204\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid205\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid206\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid207\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li5040\lin5040 }{\listname ;}\listid3}
@@ -384,13 +384,84 @@ response .json format:				 				\{\
 [\
 	\{"id":1,"cnpj_source":"00.000.000\\/0001-00","cnpj_destination":"00.000.000\\/0001-03","blood_type":6,"qnt_blood":100,"username":"admin","name":"Administrador padrao"\},\
 	\{"id":2,"cnpj_source":"00.000.000\\/0001-00","cnpj_destination":"00.000.000\\/0001-03","blood_type":6,"qnt_blood":100,"username":"admin","name":"Administrador padrao"\},\
+]\
+
+\f3\i\fs24 \cf3 \cb4 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf3 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 \cb1 13: Listar estoque
+\f4\i0\b\fs24 \cf5 \cb4 \
+
+\f0\i\b0\fs72 \cf0 \cb1 \
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+
+\i0 \cf0 	
+\f1 \uc0\u9642 
+\f0 	request .json format:
+\i \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f3\fs24 \cf3 \cb4 \
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+
+\f0\i0\fs72 \cf0 \cb1 									\{\
+										\'93operation\'94: 13,\
+										\'93key\'94: \'93uahsdu10231238dijo\'94,\
+										\'93cnpj\'94:\'94023.284.660-01\'94\
+									\}\
+	
+\f1 \uc0\u9642 
+\f0 	response .json format:
+\f3\i\fs24 \cf3 \cb4 \
+\pard\pardeftab720
+
+\f2\i0\fs32 \cf0 \cb1 \expnd0\expndtw0\kerning0
+[\
+	\{"id":5,"A_pos":402,"A_neg":700,"B_pos":0,"B_neg":0,"AB_pos":500,"AB_neg":200,"O_pos":0,"cnpj_institute":"00.000.000\\/0001-00","name":"Hemocentro UFRGS"\}\
 ]
 \f3\i\fs24 \cf3 \cb4 \kerning1\expnd0\expndtw0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
 \cf3 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 \cb1 14: Listar doa\'e7\'f5es
+\f4\i0\b\fs24 \cf5 \cb4 \
+
+\f0\i\b0\fs72 \cf0 \cb1 \
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+
+\i0 \cf0 	
+\f1 \uc0\u9642 
+\f0 	request .json format:
+\i \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f3\fs24 \cf3 \cb4 \
 \
-\
-\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+
+\f0\i0\fs72 \cf0 \cb1 									\{\
+										\'93operation\'94: 14,\
+										\'93key\'94: \'93uahsdu10231238dijo\'94,\
+										\'93cpf\'94:\'94023.284.660-01\'94\
+									\}\
+	
+\f1 \uc0\u9642 
+\f0 	response .json format:
+\f3\i\fs24 \cf3 \cb4 \
+\pard\pardeftab720
+
+\f2\i0\fs32 \cf0 \cb1 \expnd0\expndtw0\kerning0
+[\
+	\{"id":4,"cnpj_institute":"00.000.000\\/0001-00","institute_name":"Hemocentro UFRGS","qnt_blood":500,"cpf_giver":"023.284.660-01","giver_name":"Alberto Pereira","donation_date":"2015-06-12 20:27:58"\},		\{"id":5,"cnpj_institute":"00.000.000\\/0001-00","institute_name":"Hemocentro UFRGS","qnt_blood":500,"cpf_giver":"023.284.660-01","giver_name":"Alberto Pereira","donation_date":"2015-06-12 20:46:06"\},\
+	\{"id":6,"cnpj_institute":"00.000.000\\/0001-00","institute_name":"Hemocentro UFRGS","qnt_blood":500,"cpf_giver":"023.284.660-01","giver_name":"Alberto Pereira","donation_date":"2015-06-12 20:52:48"\},\
+]
+\f3\i\fs24 \cf3 \cb4 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf3 \
 \
 \
 \

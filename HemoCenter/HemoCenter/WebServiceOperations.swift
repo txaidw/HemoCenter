@@ -11,9 +11,8 @@ import Alamofire
 class WebServiceOperations {
     
     static private let WEBSERVICE_URL = "http://ec2-52-7-220-135.compute-1.amazonaws.com/hemocentro/api/index.php"
-    
-    // MARK: 1: Login
-    class func login(user: String, password: String, completionHandler: (success: Bool, message: String, authKey: String?) -> Void) {
+
+    class func login(user: String, password: String, completionHandler: (success: Bool, message: String, authKey: String?, user: User?) -> Void) {
         let values = [
             "operation" : 1,
             "username" : user,
@@ -21,7 +20,18 @@ class WebServiceOperations {
         ]
         WebServiceOperations.request(values, completionHandler: { (JSON, connectionError) -> Void in
             let parsedResponse = self.buildParsedResponse(JSON as? NSDictionary, connectionError: connectionError)
-            completionHandler(success: parsedResponse.0, message: parsedResponse.1, authKey: parsedResponse.2)
+            var newUser: User?
+            if let JSON = JSON as? [String: AnyObject] {
+                var name      = JSON["name"] as! String
+                var user_type = JSON["user_type"] as! Int
+                
+                if user_type == 1 {
+                    newUser = Manager(name: name, username: user, password: password, email: "não venho no JSON")
+                } else {
+                    newUser = Employee(name: name, username: user, password: password, email: "não venho no JSON")
+                }
+            }
+            completionHandler(success: parsedResponse.0, message: parsedResponse.1, authKey: parsedResponse.2, user: newUser)
         })
     }
     
@@ -208,14 +218,14 @@ class WebServiceOperations {
     }
     
     // MARK: 10: Cadastrar usuário
-    class func newUser <U: User where U: WebServiceUser> (authKey: String, user : U, completionHandler: (success: Bool, message: String, authKey: String?) -> Void) {
+    class func newUser(authKey: String, user : User, completionHandler: (success: Bool, message: String, authKey: String?) -> Void) {
         let values = [
             "operation": 10,
             "key": authKey,
             "name": user.name,
             "username": user.username,
             "password": user.password,
-            "type": user.roleCode(),
+            "type": user.roleCode,
             "email": user.email
         ]
         WebServiceOperations.request(values, completionHandler: { (JSON, connectionError) -> Void in
@@ -224,6 +234,80 @@ class WebServiceOperations {
         })
     }
     
+    // MARK: 11: Litar todas doações
+    class func getAllDonations(authKey: String, completionHandler: (success: Bool, message: String, donations: [Donation]?) -> Void) {
+        let values = [
+            "operation": 11,
+            "key": authKey
+        ]
+        WebServiceOperations.request(values, completionHandler: { (JSON, connectionError) -> Void in
+            var message = ""
+            var success = false
+            var donations: [Donation]?
+            if let connectionError = connectionError {
+                message = "Erro de comunicação com servidor: " + connectionError.localizedDescription
+                
+            } else if let JSON = JSON as? [[String: AnyObject]] {
+                
+                message = "Sucesso ao listar doações."
+                success = true
+                donations = [Donation]()
+                
+                for donation in JSON {
+                    var id          = donation["id"] as! Int
+                    var CPF         = donation["cpf_giver"] as! String
+                    var name        = donation["name"] as! String
+                    var amountMl    = donation["qnt_blood"] as! Int
+                    var CNPJ        = donation["cnpj_institute"] as! String
+                    
+                    let newDon = Donation(amountMl: amountMl, donorCPF: CPF, destinationCNPJ: CNPJ)
+                    newDon.name = name
+                    donations!.append(newDon)
+                }
+            }
+            completionHandler(success: success, message: message, donations: donations)
+        })
+    }
+
+    // MARK: 12: Listar transações
+    class func getAllTransactions(authKey: String, completionHandler: (success: Bool, message: String, transactions: [Transaction]?) -> Void) {
+        let values = [
+            "operation": 12,
+            "key": authKey
+        ]
+        WebServiceOperations.request(values, completionHandler: { (JSON, connectionError) -> Void in
+            var message = ""
+            var success = false
+            var transactions: [Transaction]?
+            if let connectionError = connectionError {
+                message = "Erro de comunicação com servidor: " + connectionError.localizedDescription
+                
+            } else if let JSON = JSON as? [[String: AnyObject]] {
+                
+                message = "Sucesso ao listar transações."
+                success = true
+                transactions = [Transaction]()
+                
+                for transaction in JSON {
+                    var CNPJS       = transaction["cnpj_source"] as! String
+                    var CNPJD       = transaction["cnpj_destination"] as! String
+                    var bloodType   = transaction["blood_type"] as! Int
+                    var amountMl    = transaction["qnt_blood"] as! Int
+                    var name        = transaction["responsable_name"] as! String
+                    var username    = transaction["responsable_username"] as! String
+                    
+                    let newTrans = Transaction(sourceCNPJ: CNPJS, destinationCNPJ: CNPJD, bloodType: BloodType(rawValue: bloodType)!, amountMl: amountMl)
+                    newTrans.name = name
+                    newTrans.username = username
+                    
+                    transactions!.append(newTrans)
+                }
+            }
+            completionHandler(success: success, message: message, transactions: transactions)
+        })
+    }
+
+
     // MARK: Private Methods
     
     private class func request(JSONObject: AnyObject, completionHandler: (AnyObject?, NSError?) -> Void) {
