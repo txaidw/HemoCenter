@@ -47,7 +47,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let user = "admin"//userTextField.text
         let password = "admin"//passwordTextField.text
         
-        WebServiceOperations.login(user, password: password) { [weak self] (success, message, authKey) -> Void in
+        WebServiceOperations.login(user, password: password) { [weak self] (success, message, authKey, user) -> Void in
             delay(0.8) {
                 if success {
                     self?.messageLogLabel.text = message
