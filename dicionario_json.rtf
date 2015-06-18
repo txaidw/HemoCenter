@@ -26,8 +26,9 @@
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
 \cf0 \
 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
 
-\i 1 : Login
+\i \cf0 1 : Login
 \i0 \
 \pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
 \ls1\ilvl0\cf0 {\listtext	
@@ -48,14 +49,17 @@
 										\'93msg\'94 : \'93Login relizado com sucesso.\'94\
 										\'93status\'94 : 1\
 										\'93key\'94 : \'93uahsdu10231238dijo\'94\
+										\'93user_type\'94: 1 ou 2\
+										\'93name\'94 : \'93Fulano de tal\'94\
 									\}\
 																				 \{\
 									\'93msg\'94 : \'93Erro.\'94\
 									\'93status\'94 : 0\
 									\}\
 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
 
-\i 2 : Cadastro novo Doador
+\i \cf0 2 : Cadastro novo Doador
 \i0 \
 \pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
 \ls3\ilvl0\cf0 {\listtext	
@@ -122,8 +126,9 @@ response .json format:				 				\{\
 									\'93msg\'94 : \'93Erro.\'94\
 									\'93status\'94 : 0\
 									\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
 
-\i 4 : Listar todos doadores\
+\i \cf0 4 : Listar todos doadores\
 \pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
 
 \i0 \cf0 	
@@ -211,8 +216,9 @@ response .json format:				 				\{\
 
 \f1 \uc0\u9642 
 \f0 	response .json format\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
 
-\f2\fs32 \expnd0\expndtw0\kerning0
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
 [\
 
 \fs28 \{"total_donations":"26","id":"9","name":"Alberto Pereira","adress":"Rua Dr. Flores, Porto Alegre","phone1":"12344123","phone2":"1234123","email":"alberto.prereira@hotmail.com","cpf":"023.284.660-01","blood_type":"A","rh":"Negativo"\},\
@@ -251,7 +257,14 @@ response .json format:				 				\{\
 									\}								
 \i 			\
 9 : Realizar transa\'e7\'e3o\
-						
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+
+\i0 \cf0 	
+\f1 \uc0\u9642 
+\f0 	request .json format:
+\i \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 						
 \i0   \{\
 										\'93operation\'94 : 9,\
 										\'93key\'94 : \'93uahsdu10231238dijo\'94,\
@@ -266,7 +279,20 @@ response .json format:				 				\{\
 
 \b\fs48 \cf2 (N \'e9 um numero de 1 at\'e9 8 onde temos 1-A_pos, 2-A_neg, 3-B_pos, 4-B_neg, 5-AB_pos, 6-AB_neg, 7-O_pos, 8-O_neg)
 \b0\fs72 \cf0 \
-							\}
+							\}\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+\cf0 	
+\f1 \uc0\u9642 
+\f0 	response .json format:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 							\{\
+									\'93msg\'94 : \'93Trans\'e7\'e3o realizada com sucesso.\'94\
+									\'93status\'94 : 1\
+							\}\
+							 \{\
+									\'93msg\'94 : \'93Erro.\'94\
+									\'93status\'94 : 0\
+								\}		
 \i \
 10:Cadastrar usu\'e1rio\
 \pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
@@ -302,15 +328,66 @@ response .json format:				 				\{\
 									\'93status\'94 : 0\
 							\}\
 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
 
-\i 10:Cadastrar usu\'e1rio
+\i \cf0 11: Listar todas doa\'e7\'f5es\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+
+\i0 \cf0 	
+\f1 \uc0\u9642 
+\f0 	request .json format:
+\i \
+
+\i0 									\{\
+										\'93operation\'94: 11,\
+										\'93key\'94: \'93uahsdu10231238dijo\'94\
+									\}\
+	
+\f1 \uc0\u9642 
+\f0 	response .json format:\
+\pard\pardeftab720
+
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+[\
+	\{"id":4,"cpf_giver":"023.284.660-01","name":"Alberto Pereira","qnt_blood":500,"cnpj_institute":"00.000.000\\/0001-00"\},\
+	\{"id":5,"cpf_giver":"023.284.660-01","name":"Alberto Pereira","qnt_blood":500,"cnpj_institute":"00.000.000\\/0001-00"\},\
+	\{"id":6,"cpf_giver":"023.284.660-01","name":"Alberto Pereira","qnt_blood":500,"cnpj_institute":"00.000.000\\/0001-00"\}\
+]\
+\pard\pardeftab720
+
+\f0\i\fs72 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 12: Listar transa\'e7\'f5es\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+
+\i0 \cf0 	
+\f1 \uc0\u9642 
+\f0 	request .json format:
+\i \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
 \f3\fs24 \cf3 \cb4 \
 \
-\
-\
-\
-\
-\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+
+\f0\i0\fs72 \cf0 \cb1 									\{\
+										\'93operation\'94: 12,\
+										\'93key\'94: \'93uahsdu10231238dijo\'94\
+									\}\
+	
+\f1 \uc0\u9642 
+\f0 	response .json format:
+\f3\i\fs24 \cf3 \cb4 \
+\pard\pardeftab720
+
+\f2\i0\fs32 \cf0 \cb1 \expnd0\expndtw0\kerning0
+[\
+	\{"id":1,"cnpj_source":"00.000.000\\/0001-00","cnpj_destination":"00.000.000\\/0001-03","blood_type":6,"qnt_blood":100,"username":"admin","name":"Administrador padrao"\},\
+	\{"id":2,"cnpj_source":"00.000.000\\/0001-00","cnpj_destination":"00.000.000\\/0001-03","blood_type":6,"qnt_blood":100,"username":"admin","name":"Administrador padrao"\},\
+]
+\f3\i\fs24 \cf3 \cb4 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf3 \
 \
 \
 \
