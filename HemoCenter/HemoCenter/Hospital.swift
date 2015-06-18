@@ -7,4 +7,5 @@
 //
 
 class Hospital: Instituition {
+    
 }

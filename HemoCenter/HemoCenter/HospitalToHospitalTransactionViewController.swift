@@ -22,6 +22,8 @@ class HospitalToHospitalTransactionViewController: UITableViewController {
                 self?.rightButton.enabled = true
                 self?.spinner.stopAnimating()
                 self?.directionButton.hidden = false
+            } else {
+                print(message)
             }
         })
     }
@@ -38,6 +40,8 @@ class HospitalToHospitalTransactionViewController: UITableViewController {
     
     @IBOutlet weak var rh: UISegmentedControl!
     @IBOutlet weak var type: UISegmentedControl!
+    
+    @IBOutlet weak var log: UILabel!
     
     var leftHospital:Hospital? {
         didSet {
@@ -75,17 +79,6 @@ class HospitalToHospitalTransactionViewController: UITableViewController {
         }
     }
     
-    @IBAction func saveAction(sender: UIBarButtonItem) {
-        var from:Hospital = leftHospital!
-        var to:Hospital = rightHospital!
-        if directionButton.selected {
-            from = rightHospital!
-            to = leftHospital!
-        }
-        let bt = BloodType(type: type.selectedSegmentIndex, rh: rh.selectedSegmentIndex)!
-        
-        let transaction = Transaction(sourceCNPJ: from.CNPJ, destinationCNPJ: to.CNPJ, bloodType: bt, amountMl: Int(bloodVolumeStepperValue.value))
-    }
     @IBAction func directionButton(sender: UIButton) {
         sender.selected = !sender.selected
     }
@@ -101,6 +94,22 @@ class HospitalToHospitalTransactionViewController: UITableViewController {
                 dest.action = { [weak self] (answer:Hospital?) -> () in
                     self?.rightHospital = answer
                 }
+            }
+        }
+        else if let dest = segue.destinationViewController as? StatusViewController {
+            var from:Hospital = leftHospital!
+            var to:Hospital = rightHospital!
+            if directionButton.selected {
+                from = rightHospital!
+                to = leftHospital!
+            }
+            let bt = BloodType(type: type.selectedSegmentIndex, rh: rh.selectedSegmentIndex)!
+            
+            let transaction = Transaction(sourceCNPJ: from.CNPJ, destinationCNPJ: to.CNPJ, bloodType: bt, amountMl: Int(bloodVolumeStepperValue.value))
+            let token = AppDelegate.$.userKeychainToken!
+            dest.initialMessage = "Registrando Transação"
+            dest.networkingClosure = { (closure:(success: Bool, message: String) -> ()) in
+                WebServiceOperations.newTransaction(token, transaction: transaction, completionHandler: closure)
             }
         }
     }
