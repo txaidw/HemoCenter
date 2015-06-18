@@ -10,8 +10,10 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var topConstraint: NSLayoutConstraint!
+    @IBOutlet weak var midConstraint: NSLayoutConstraint!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
-    
+
     @IBOutlet weak var messageLogLabel: UILabel!
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -42,8 +44,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginButton.alpha = 0.0
         messageLogLabel.alpha = 0.0
 
-        let user = userTextField.text
-        let password = passwordTextField.text
+        let user = "admin"//userTextField.text
+        let password = "admin"//passwordTextField.text
         
         WebServiceOperations.login(user, password: password) { [weak self] (success, message, authKey) -> Void in
             delay(0.8) {
@@ -70,6 +72,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         var keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
         
         UIView.animateWithDuration(2, animations: { () -> Void in
+            self.topConstraint.constant = 16
+            self.midConstraint.constant = 24
             self.bottomConstraint.constant = keyboardFrame.size.height + 20
         })
     }
@@ -78,6 +82,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         var info = notification.userInfo!
         
         UIView.animateWithDuration(2, animations: { () -> Void in
+            self.topConstraint.constant = 100
+            self.midConstraint.constant = 100
             self.bottomConstraint.constant = 100
         })
     }

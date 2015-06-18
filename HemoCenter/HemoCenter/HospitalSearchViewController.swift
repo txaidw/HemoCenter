@@ -1,6 +1,6 @@
 //
 //  UserSearchViewController.swift
-//  
+//
 //
 //  Created by Txai Wieser on 6/11/15.
 //
@@ -8,24 +8,24 @@
 
 import UIKit
 
-protocol UserSearchPopoverDelegate:class {
-    func userSearchReturnedPopoverSelection(index:Int)
+protocol HospitalSearchPopoverDelegate:class {
+    func hospitalSearchReturnedPopoverSelection(hospital:Hospital, index: Int)
 }
 
-class UserSearchViewController: UITableViewController, UISearchResultsUpdating {
-    var tableData:[Donor] = {
-        let a = Donor(CPF: "123", name: "teste 1", email: "", bloodType: BloodType(type: 0, rh: 0)!, phone: "123", address: "132")
-        let b = Donor(CPF: "456", name: "teste 2", email: "", bloodType: BloodType(type: 0, rh: 0)!, phone: "123", address: "132")
-        let c = Donor(CPF: "789", name: "teste 3", email: "", bloodType: BloodType(type: 0, rh: 0)!, phone: "123", address: "132")
+class HospitalSearchViewController: UITableViewController, UISearchResultsUpdating {
+    var tableData:[Hospital] = {
+        let a = Hospital(CNPJ: "654.654.65", name: "Hosp1")
+        let b = Hospital(CNPJ: "5641561..5", name: "Hosp2")
+        let c = Hospital(CNPJ: "651.65.15.", name: "Hosp3")
         
         let example = [a, b, c]
         return example
-    }()
-    var filteredTableData = [Donor]()
+        }()
+    var filteredTableData = [Hospital]()
     var resultSearchController = UISearchController()
     
-    weak var delegate:UserSearchPopoverDelegate?
-    
+    weak var delegate:HospitalSearchPopoverDelegate?
+    var action:((answer:Hospital?)->())?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,7 +50,9 @@ class UserSearchViewController: UITableViewController, UISearchResultsUpdating {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.delegate?.userSearchReturnedPopoverSelection(indexPath.row)
+        let d = tableData[indexPath.row]
+        self.delegate?.hospitalSearchReturnedPopoverSelection(d, index: indexPath.row)
+        self.action?(answer: d)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -79,11 +81,11 @@ class UserSearchViewController: UITableViewController, UISearchResultsUpdating {
         // 3
         if (self.resultSearchController.active) {
             cell.textLabel?.text = filteredTableData[indexPath.row].name
-            cell.detailTextLabel?.text = filteredTableData[indexPath.row].CPF
+            cell.detailTextLabel?.text = filteredTableData[indexPath.row].CNPJ
             return cell
         } else {
             cell.textLabel?.text = tableData[indexPath.row].name
-            cell.detailTextLabel?.text = tableData[indexPath.row].CPF
+            cell.detailTextLabel?.text = tableData[indexPath.row].CNPJ
             return cell
         }
     }
@@ -94,7 +96,7 @@ class UserSearchViewController: UITableViewController, UISearchResultsUpdating {
         
         let searchPredicate = NSPredicate(format: "name CONTAINS[c] %@", searchController.searchBar.text)
         let array = (tableData as NSArray).filteredArrayUsingPredicate(searchPredicate)
-        filteredTableData = array as! [Donor]
+        filteredTableData = array as! [Hospital]
         
         self.tableView.reloadData()
     }
