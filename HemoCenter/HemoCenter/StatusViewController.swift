@@ -28,7 +28,6 @@ class StatusViewController: UIViewController {
                     self.messageLogLabel.text = message
                 } else {
                     self.messageLogLabel.text = message
-                    AppDelegate.$.userKeychainToken = nil
                 }
                 
                 self.activityIndicator.alpha = 0.0

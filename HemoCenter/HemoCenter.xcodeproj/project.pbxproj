@@ -26,6 +26,9 @@
 		E943FC5E1B1D511A00F5A52D /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */; };
 		E95A20491B29658C006222F1 /* BloodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A20481B29658C006222F1 /* BloodType.swift */; };
 		E95A204B1B2969E1006222F1 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A204A1B2969E1006222F1 /* StatusViewController.swift */; };
+		E99FA0AA1B32586F00C59430 /* NSString+Filtered.m in Sources */ = {isa = PBXBuildFile; fileRef = E99FA0A91B32586F00C59430 /* NSString+Filtered.m */; };
+		E99FA0B11B32665100C59430 /* HospitalSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FA0B01B32665100C59430 /* HospitalSearchViewController.swift */; };
+		E99FA0B71B327F7C00C59430 /* HospitalToHospitalTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FA0B61B327F7C00C59430 /* HospitalToHospitalTransactionViewController.swift */; };
 		E9B885AF1B224DA5002B9369 /* NewDonorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B885AE1B224DA5002B9369 /* NewDonorTableViewController.swift */; };
 		E9CD60EF1B2943CD007E9540 /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD60EE1B2943CD007E9540 /* UserSearchViewController.swift */; };
 		E9CD60F71B295229007E9540 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD60F61B295229007E9540 /* Utilities.swift */; };
@@ -104,6 +107,11 @@
 		E943FC5D1B1D511A00F5A52D /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		E95A20481B29658C006222F1 /* BloodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodType.swift; sourceTree = "<group>"; };
 		E95A204A1B2969E1006222F1 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		E99FA0A81B32586F00C59430 /* NSString+Filtered.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Filtered.h"; sourceTree = "<group>"; };
+		E99FA0A91B32586F00C59430 /* NSString+Filtered.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Filtered.m"; sourceTree = "<group>"; };
+		E99FA0AF1B32591500C59430 /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bridge.h; path = HemoCenter/Bridge.h; sourceTree = SOURCE_ROOT; };
+		E99FA0B01B32665100C59430 /* HospitalSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalSearchViewController.swift; sourceTree = "<group>"; };
+		E99FA0B61B327F7C00C59430 /* HospitalToHospitalTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalToHospitalTransactionViewController.swift; sourceTree = "<group>"; };
 		E9B885AE1B224DA5002B9369 /* NewDonorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDonorTableViewController.swift; sourceTree = "<group>"; };
 		E9CD60EE1B2943CD007E9540 /* UserSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
 		E9CD60F61B295229007E9540 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -176,6 +184,9 @@
 		E9174ED31B0A2D34000F57A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E99FA0A81B32586F00C59430 /* NSString+Filtered.h */,
+				E99FA0AF1B32591500C59430 /* Bridge.h */,
+				E99FA0A91B32586F00C59430 /* NSString+Filtered.m */,
 				E9CD60F61B295229007E9540 /* Utilities.swift */,
 				E9174ED41B0A2D34000F57A5 /* Info.plist */,
 				71EF12331B293E9D00FA6D2D /* Alamofire.xcodeproj */,
@@ -219,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				E9D8E63B1B239B650003A526 /* TransactionsViewController.swift */,
+				E99FA0B61B327F7C00C59430 /* HospitalToHospitalTransactionViewController.swift */,
 			);
 			name = Transactions;
 			sourceTree = "<group>";
@@ -254,8 +266,9 @@
 		E9D8E64D1B239DE10003A526 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				E95A204A1B2969E1006222F1 /* StatusViewController.swift */,
 				E9CD60EE1B2943CD007E9540 /* UserSearchViewController.swift */,
+				E99FA0B01B32665100C59430 /* HospitalSearchViewController.swift */,
+				E95A204A1B2969E1006222F1 /* StatusViewController.swift */,
 				E9296F581B1DF7C1000D5DC7 /* LoginViewController.swift */,
 				E9D8E64E1B23A1BE0003A526 /* AboutViewController.swift */,
 			);
@@ -377,7 +390,9 @@
 				7120C3571B3203F900EC75A0 /* User.swift in Sources */,
 				E9D8E6461B239D890003A526 /* DonnorReportsViewController.swift in Sources */,
 				E9D8E63C1B239B650003A526 /* TransactionsViewController.swift in Sources */,
+				E99FA0B11B32665100C59430 /* HospitalSearchViewController.swift in Sources */,
 				E943FC5B1B1D503400F5A52D /* MasterTableViewController.swift in Sources */,
+				E99FA0B71B327F7C00C59430 /* HospitalToHospitalTransactionViewController.swift in Sources */,
 				E9174ED61B0A2D34000F57A5 /* AppDelegate.swift in Sources */,
 				E9D8E64A1B239DA00003A526 /* HemocenterReportsViewController.swift in Sources */,
 				E9CD60F71B295229007E9540 /* Utilities.swift in Sources */,
@@ -387,6 +402,7 @@
 				E95A20491B29658C006222F1 /* BloodType.swift in Sources */,
 				E9D8E6481B239D950003A526 /* HospitalReportsViewController.swift in Sources */,
 				7120C3541B3203F900EC75A0 /* Instituition.swift in Sources */,
+				E99FA0AA1B32586F00C59430 /* NSString+Filtered.m in Sources */,
 				E9CD60EF1B2943CD007E9540 /* UserSearchViewController.swift in Sources */,
 				7120C3521B3203F900EC75A0 /* Hemocenter.swift in Sources */,
 				7120C3531B3203F900EC75A0 /* Hospital.swift in Sources */,
@@ -512,6 +528,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = HemoCenter/Bridge.h;
 			};
 			name = Debug;
 		};
@@ -523,6 +540,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = HemoCenter/Bridge.h;
 			};
 			name = Release;
 		};

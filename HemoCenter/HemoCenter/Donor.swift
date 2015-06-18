@@ -6,16 +6,16 @@
 //  Copyright (c) 2015 TDW. All rights reserved.
 //
 
-class Donor {
+class Donor: NSObject {
 
     var CPF: String
     var name: String
     var email: String
     var bloodType: BloodType
-    var phone: Int
+    var phone: String
     var address: String
     
-    init(CPF: String, name: String, email: String, bloodType: BloodType, phone: Int, address: String) {
+    init(CPF: String, name: String, email: String, bloodType: BloodType, phone: String, address: String) {
         self.CPF = CPF
         self.name = name
         self.email = email

@@ -22,6 +22,14 @@ class TransactionsViewController: UIViewController {
     }
     
 
+    @IBAction func directionButton(sender: UIButton) {
+        if sender.selected {
+            
+        } else {
+            
+        }
+        sender.selected = !sender.selected
+    }
     /*
     // MARK: - Navigation
 

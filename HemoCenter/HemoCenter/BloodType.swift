@@ -14,4 +14,12 @@ enum BloodType: Int {
     init?(type:Int, rh:Int) {
         self.init(rawValue: type*2 + (rh+1))
     }
+    
+    func rh() -> Int {
+        return (self.rawValue-1)%2
+    }
+    
+    func type() -> Int {
+        return (self.rawValue-1)/2
+    }
 }

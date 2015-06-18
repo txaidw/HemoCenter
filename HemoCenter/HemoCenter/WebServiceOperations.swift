@@ -33,7 +33,7 @@ class WebServiceOperations {
             "name" : donor.name,
             "adress" : donor.address,
             "phone1" : donor.phone,
-            "phone2" : 0,
+            "phone2" : "0",
             "email" : donor.email,
             "cpf" : donor.CPF,
             "blood_type" : donor.bloodType.rawValue
@@ -83,7 +83,7 @@ class WebServiceOperations {
                     var name        = donor["name"]         as! String
                     var email       = donor["email"]        as! String
                     var bloodType   = donor["blood_type"]   as! Int
-                    var phone       = donor["phone1"]       as! Int
+                    var phone       = donor["phone1"]       as! String
                     var address     = donor["adress"]       as! String
                     donors!.append(Donor(CPF: CPF, name: name, email: email, bloodType: BloodType(rawValue: bloodType)!, phone: phone, address: address))
                 }
@@ -168,7 +168,7 @@ class WebServiceOperations {
                     var name        = donor["name"]         as! String
                     var email       = donor["email"]        as! String
                     var bloodType   = donor["blood_type"]   as! Int
-                    var phone       = donor["phone1"]       as! Int
+                    var phone       = donor["phone1"]       as! String
                     var address     = donor["adress"]       as! String
                     donors!.append(Donor(CPF: CPF, name: name, email: email, bloodType: BloodType(rawValue: bloodType)!, phone: phone, address: address))
                 }

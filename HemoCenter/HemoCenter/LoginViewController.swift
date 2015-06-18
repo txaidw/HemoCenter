@@ -44,8 +44,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginButton.alpha = 0.0
         messageLogLabel.alpha = 0.0
 
-        let user = userTextField.text
-        let password = passwordTextField.text
+        let user = "admin"//userTextField.text
+        let password = "admin"//passwordTextField.text
         
         WebServiceOperations.login(user, password: password) { [weak self] (success, message, authKey) -> Void in
             delay(0.8) {

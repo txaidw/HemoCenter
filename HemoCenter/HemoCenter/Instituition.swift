@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 TDW. All rights reserved.
 //
 
-class Instituition {
+class Instituition: NSObject {
     
     var CNPJ: String
     var name: String

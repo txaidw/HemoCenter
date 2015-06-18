@@ -18,7 +18,6 @@ class NewDonorTableViewController: UITableViewController {
     
     @IBOutlet weak var bRH: UISegmentedControl!
     @IBOutlet weak var bType: UISegmentedControl!
-    @IBOutlet weak var donnations: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,15 +34,60 @@ class NewDonorTableViewController: UITableViewController {
         let token = AppDelegate.$.userKeychainToken!
         let name = self.name.text
         let address = self.address.text
-        let phone = self.phone.text.toInt()!
+        let phone = self.phone.text
         let email = self.mail.text
-        let cpf = self.cpf.text
+        var cpf = String(self.cpf.text)
         let bt = BloodType(type: bType.selectedSegmentIndex, rh: bRH.selectedSegmentIndex)!
         let statusView = segue.destinationViewController as! StatusViewController
         let donor = Donor(CPF: cpf, name: name, email: email, bloodType: bt, phone: phone, address: address)
         statusView.initialMessage = "Registrando Doador"
         statusView.networkingClosure = { (closure:(success: Bool, message: String) -> ()) in
             WebServiceOperations.newDonor(token, donor: donor, completionHandler: closure)
+        }
+    }
+    
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool
+    {
+        var choosedFilter:String? = nil
+       
+        if textField == cpf {
+            choosedFilter = "###.###.###-##"
+        } else if textField == phone {
+            choosedFilter = "(##) ####-####"
+        }
+        
+        if let filter = choosedFilter {
+            
+            var changedString = (textField.text as NSString).stringByReplacingCharactersInRange(range, withString: string)
+            
+            let c1 = range.length == 1 // Only do for single deletes
+            let c2 = (string as NSString).length < range.length
+            let c3 = ((textField.text as NSString).substringWithRange(range) as NSString).rangeOfCharacterFromSet(NSCharacterSet(charactersInString: "0123456789")).location == NSNotFound
+
+            if c1 && c2 && c3 {
+                // Something was deleted.  Delete past the previous number
+                var location:Int = (changedString as NSString).length-1
+                if location > 0 {
+                    for(; location > 0; location--) {
+                        let s = (changedString as NSString)
+                        let j = s.characterAtIndex(location)
+                        let v:Int32 = Int32(j)
+                        if NSString.isDigit(j) {
+                            break
+                        }
+                    }
+                    changedString = (changedString as NSString).substringToIndex(location)
+                }
+            }
+            
+            textField.text = NSString.filteredPhoneStringFromString(changedString, withFilter: filter)
+            
+            return false
+        }
+        else
+        {
+            return true
         }
     }
     
