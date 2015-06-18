@@ -18,7 +18,6 @@ class HemocenterToHospitalTransactionViewController: UITableViewController {
         WebServiceOperations.getAllHospitals(token, completionHandler: { [weak self] (success, message, hospitals) -> Void in
             if success {
                 self?.hospitals = hospitals
-                self?.leftButton.enabled = true
                 self?.rightButton.enabled = true
                 self?.spinner.stopAnimating()
                 self?.directionButton.hidden = false
@@ -30,7 +29,6 @@ class HemocenterToHospitalTransactionViewController: UITableViewController {
     
     @IBOutlet weak var directionButton: UIButton!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
-    @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
     @IBOutlet weak var bloodVolumeStepperValue: UIStepper!
     @IBOutlet weak var bloodVolume: UILabel!
@@ -43,24 +41,13 @@ class HemocenterToHospitalTransactionViewController: UITableViewController {
     
     @IBOutlet weak var log: UILabel!
     
-    var leftHospital:Hospital? {
-        didSet {
-            if let lh = leftHospital {
-                leftButton.setTitle(lh.name, forState: .Normal)
-                if rightHospital != nil && bloodVolumeStepperValue.value > 0 {
-                    save.enabled = true
-                } else {
-                    save.enabled = false
-                }
-            }
-        }
-    }
+    var leftHemocenter:Hemocenter? = AppDelegate.$.hemocenter
     
     var rightHospital:Hospital? {
         didSet {
             if let rh = rightHospital {
                 rightButton.setTitle(rh.name, forState: .Normal)
-                if leftHospital != nil && bloodVolumeStepperValue.value > 0 {
+                if bloodVolumeStepperValue.value > 0 {
                     save.enabled = true
                 } else {
                     save.enabled = false
@@ -72,7 +59,7 @@ class HemocenterToHospitalTransactionViewController: UITableViewController {
     
     @IBAction func bloodVolumeStepper(sender: UIStepper) {
         bloodVolume.text = String(stringInterpolationSegment: sender.value)
-        if leftHospital != nil && rightHospital != nil && sender.value > 0 {
+        if rightHospital != nil && sender.value > 0 {
             save.enabled = true
         } else {
             save.enabled = false
@@ -86,22 +73,18 @@ class HemocenterToHospitalTransactionViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let dest = segue.destinationViewController as? HospitalSearchViewController {
             dest.tableData = hospitals!
-            if segue.identifier == "LeftHospitalSegue" {
-                dest.action = { [weak self] (answer:Hospital?) -> () in
-                    self?.leftHospital = answer
-                }
-            } else if segue.identifier == "RightHospitalSegue" {
+            if segue.identifier == "RightHospitalSegue" {
                 dest.action = { [weak self] (answer:Hospital?) -> () in
                     self?.rightHospital = answer
                 }
             }
         }
         else if let dest = segue.destinationViewController as? StatusViewController {
-            var from:Hospital = leftHospital!
-            var to:Hospital = rightHospital!
+            var from:Instituition = leftHemocenter!
+            var to:Instituition = rightHospital!
             if directionButton.selected {
                 from = rightHospital!
-                to = leftHospital!
+                to = leftHemocenter!
             }
             let bt = BloodType(type: type.selectedSegmentIndex, rh: rh.selectedSegmentIndex)!
             
