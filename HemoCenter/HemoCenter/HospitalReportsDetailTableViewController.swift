@@ -1,5 +1,5 @@
 //
-//  DonorReportDetailTableViewController.swift
+//  HospitalReportsDetailTableViewController.swift
 //  
 //
 //  Created by Txai Wieser on 6/18/15.
@@ -8,34 +8,24 @@
 
 import UIKit
 
-class DonorReportDetailTableViewController: UITableViewController {
-
-    var selectedDonor:Donor? {
+class HospitalReportsDetailTableViewController: UITableViewController {
+    var selectedHospital:Hospital? {
         didSet {
 //            WebServiceOperations.
         }
     }
     
     @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var cpf: UILabel!
-    @IBOutlet weak var email: UILabel!
-    @IBOutlet weak var endereço: UILabel!
-    @IBOutlet weak var telefone: UILabel!
-    @IBOutlet weak var rh: UISegmentedControl!
-    @IBOutlet weak var tipo: UISegmentedControl!
+    @IBOutlet weak var cnpj: UILabel!
+
     
     override func viewWillAppear(animated: Bool) {
-        if let d = selectedDonor {
+        if let d = selectedHospital {
             name.text = d.name
-            cpf.text = d.CPF
-            email.text = d.email
-            endereço.text = d.address
-            telefone.text = String(d.phone)
-            rh.selectedSegmentIndex = d.bloodType.rh()
-            tipo.selectedSegmentIndex = d.bloodType.type()
+            cnpj.text = d.CNPJ
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -55,4 +45,4 @@ class DonorReportDetailTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.001
     }
-  }
+}
