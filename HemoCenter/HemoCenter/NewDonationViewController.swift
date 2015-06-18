@@ -108,7 +108,7 @@ class NewDonationViewController: UITableViewController, UserSearchPopoverDelegat
         } else if segue.identifier == "SaveDonationSegue" {
             let token = AppDelegate.$.userKeychainToken
             let donorID = selectedDonor!.CPF
-            let donation = Donation(amountMl: (qtd.text! as NSString).floatValue, donorCPF: donorID, destinationCNPJ: nil)
+            let donation = Donation(amountMl: (qtd.text! as NSString).integerValue, donorCPF: donorID, destinationCNPJ: nil)
             let statusView = segue.destinationViewController as! StatusViewController
             statusView.initialMessage = "Registrando Doação"
             statusView.networkingClosure = { (closure:(success: Bool, message: String) -> ()) in
