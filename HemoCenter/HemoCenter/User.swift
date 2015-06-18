@@ -6,16 +6,13 @@
 //  Copyright (c) 2015 TDW. All rights reserved.
 //
 
-protocol WebServiceUser {
-    func roleCode() -> Int
-}
-
 class User {
     
     var name: String
     var username: String
     var password: String
     var email: String
+    var roleCode = 0
     
     init(name: String, username: String, password: String, email: String) {
         

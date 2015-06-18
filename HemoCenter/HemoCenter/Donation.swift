@@ -11,6 +11,7 @@ class Donation {
     var amountMl: Int
     var donorCPF: String
     var destinationCNPJ: String?
+    var name: String?
 
     init(amountMl: Int, donorCPF: String, destinationCNPJ: String?) {
         self.amountMl = amountMl
