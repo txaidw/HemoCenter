@@ -12,6 +12,8 @@ class Transaction {
     var destinationCNPJ: String
     var bloodType: BloodType
     var amountMl: Int
+    var username: String?
+    var name: String?
     
     init(sourceCNPJ: String?, destinationCNPJ: String, bloodType: BloodType, amountMl: Int) {
         

@@ -6,6 +6,10 @@
 //  Copyright (c) 2015 TDW. All rights reserved.
 //
 
-class Employee: User, WebServiceUser {
-    func roleCode() -> Int { return 2 }
+class Employee: User {
+    override init(name: String, username: String, password: String, email: String) {
+        super.init(name: name, username: username, password: password, email: email)
+        self.roleCode = 2;
+    }
+ 
 }
