@@ -11,9 +11,9 @@ class Transaction {
     var sourceCNPJ: String?
     var destinationCNPJ: String
     var bloodType: BloodType
-    var amountMl: Float
+    var amountMl: Int
     
-    init(sourceCNPJ: String?, destinationCNPJ: String, bloodType: BloodType, amountMl: Float) {
+    init(sourceCNPJ: String?, destinationCNPJ: String, bloodType: BloodType, amountMl: Int) {
         
         self.sourceCNPJ = sourceCNPJ
         self.destinationCNPJ = destinationCNPJ

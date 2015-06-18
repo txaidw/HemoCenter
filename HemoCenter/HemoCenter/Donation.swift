@@ -8,11 +8,11 @@
 
 class Donation {
     
-    var amountMl: Float
+    var amountMl: Int
     var donorCPF: String
     var destinationCNPJ: String?
 
-    init(amountMl: Float, donorCPF: String, destinationCNPJ: String?) {
+    init(amountMl: Int, donorCPF: String, destinationCNPJ: String?) {
         self.amountMl = amountMl
         self.donorCPF = donorCPF
         self.destinationCNPJ = destinationCNPJ
