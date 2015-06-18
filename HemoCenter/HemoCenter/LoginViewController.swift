@@ -52,6 +52,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 if success {
                     self?.messageLogLabel.text = message
                     AppDelegate.$.userKeychainToken = authKey
+                    AppDelegate.$.userLoggedIn = user
                     delay(0.4) {
                         self?.performSegueWithIdentifier("loginSuccessful", sender: self)
                     }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewHospitalTableTableViewController: UITableViewController {
+class NewHospitalTableViewController: UITableViewController {
         
         @IBOutlet weak var name: UITextField!
         @IBOutlet weak var cnpj: UITextField!

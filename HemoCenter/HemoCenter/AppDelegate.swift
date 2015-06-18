@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     static var $:AppDelegate { get { return UIApplication.sharedApplication().delegate as! AppDelegate } }
     var userKeychainToken:String?
+    var userLoggedIn:User?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
