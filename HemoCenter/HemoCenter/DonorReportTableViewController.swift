@@ -43,6 +43,13 @@ class DonorReportTableViewController: UITableViewController, UISearchResultsUpda
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let ip = tableView.indexPathForCell(sender as! UITableViewCell)
+        if let dest = segue.destinationViewController as? DonorReportDetailTableViewController {
+            dest.selectedDonor = tableData[ip!.row]
+        }
+    }
+    
     
     // MARK: - Table view data source
     
@@ -89,4 +96,17 @@ class DonorReportTableViewController: UITableViewController, UISearchResultsUpda
         self.tableView.reloadData()
     }
     
+    // MARK: - Table view data source
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundColor = UIColor.clearColor()
+    }
+    
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
+    }
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.001
+    }
 }
