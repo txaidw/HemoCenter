@@ -33,15 +33,35 @@ Class Giver{
 
     }
 
+    public function isGiver(){
+        $dao = new Giver_DAO();
+        return $dao->isGiver($this->cpf);
+    }
+
     public function setData($json_data){
-        $this->name = $json_data['name'];
-        $this->email = $json_data['email'];
-        $this->phone1 = $json_data['phone1'];
-        $this->phone2 = $json_data['phone2'];
-        $this->adress = $json_data['adress'];
-        $this->cpf = $json_data['cpf'];
+
+
+        $this->name = trim($json_data['name']);
+        $this->email = trim($json_data['email']);
+        $this->phone1 = trim($json_data['phone1']);
+        $this->phone2 = trim($json_data['phone2']);
+        $this->adress = trim($json_data['adress']);
+        $this->cpf = trim($json_data['cpf']);
         $this->type_blood = $json_data['blood_type'];
 
+    }
+
+    public function listAllGivers(){
+
+        return Giver_DAO::listAllGivers();
+    }
+
+    public function good_blood_givers(){
+        return Giver_DAO::good_blood_givers();
+    }
+
+    public function listDonationOfGiver(){
+        return Giver_DAO::listDonationOfGiver($this->cpf);
     }
 
 
