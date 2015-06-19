@@ -9,11 +9,7 @@
 import UIKit
 
 class HospitalReportsDetailTableViewController: UITableViewController {
-    var selectedHospital:Hospital? {
-        didSet {
-//            WebServiceOperations.
-        }
-    }
+    var selectedHospital:Instituition? = AppDelegate.$.hemocenter
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var cnpj: UILabel!
