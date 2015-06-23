@@ -135,7 +135,7 @@ class WebServiceOperations {
     
     // MARK: 6: Listar dados hemocentro
     class func hemocenterInfo(authKey: String, completionHandler: (success: Bool, message: String, hemocenter: Hemocenter?) -> Void) {
-        completionHandler(success: true, message: "Sucesso.", hemocenter: Hemocenter(CNPJ: "00.000.000/0000-00", name: "Hemocentro UFRGS"))
+        completionHandler(success: true, message: "Sucesso.", hemocenter: Hemocenter(CNPJ: "00.000.000/0001-00", name: "Hemocentro UFRGS"))
     }
     
     // MARK: 7: Listar doadores contemplados com programa “sangue bom”
