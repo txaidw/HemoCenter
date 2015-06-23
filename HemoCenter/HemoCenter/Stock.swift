@@ -32,7 +32,7 @@ class Stock {
     }
     
     func lista() -> String {
-        let s = "A Positivo: \(aPos) \nA Positivo: \(aPos) \nA Negativo: \(aNeg) \nB Positivo: \(bPos) \nB Negativo: \(bNeg) \nAB Positivo: \(abPos) \nAB Negativo: \(abNeg) \nO Positivo: \(oPos)\nO Negativo: \(oNeg)"
+        let s = "A Positivo: \(aPos)mL \nA Negativo: \(aNeg)mL \nB Positivo: \(bPos)mL \nB Negativo: \(bNeg)mL \nAB Positivo: \(abPos)mL \nAB Negativo: \(abNeg)mL \nO Positivo: \(oPos)mL \nO Negativo: \(oNeg)mL"
         
         return s
     }
