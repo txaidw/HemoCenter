@@ -305,19 +305,20 @@ class WebServiceOperations {
             if let connectionError = connectionError {
                 message = "Erro de comunicação com servidor: " + connectionError.localizedDescription
                 
-            } else if let JSON = JSON as? [String: AnyObject] {
+            }
+            if let JSON = JSON as? [[String: AnyObject]] {
                 message = "Sucesso ao listar o stock."
                 success = true
-                var A_pos = JSON["A_pos"] as! Int
-                var A_neg = JSON["A_neg"] as! Int
-                var B_pos = JSON["B_pos"] as! Int
-                var B_neg = JSON["B_neg"] as! Int
-                var AB_pos = JSON["AB_pos"] as! Int
-                var AB_neg = JSON["AB_neg"] as! Int
-                var O_pos = JSON["O_pos"] as! Int
-                var O_neg = JSON["O_neg"] as! Int
-                var cnpj_institute = JSON["cnpj_institute"] as! String
-                var name = JSON["name"] as! String
+                var A_pos = JSON[0]["A_pos"] as! Int
+                var A_neg = JSON[0]["A_neg"] as! Int
+                var B_pos = JSON[0]["B_pos"] as! Int
+                var B_neg = JSON[0]["B_neg"] as! Int
+                var AB_pos = JSON[0]["AB_pos"] as! Int
+                var AB_neg = JSON[0]["AB_neg"] as! Int
+                var O_pos = JSON[0]["O_pos"] as! Int
+                var O_neg = JSON[0]["O_neg"] as! Int
+                var cnpj_institute = JSON[0]["cnpj_institute"] as! String
+                var name = JSON[0]["name"] as! String
                 stock = Stock(instituitionCNPJ: cnpj_institute, instituitionName: name, aPos: A_pos, aNeg: A_neg, bPos: B_pos, bNeg: B_neg, abPos: AB_pos, abNeg: AB_neg, oPos: O_pos, oNeg: O_neg)
             }
             completionHandler(success: success, message: message, stock: stock)
