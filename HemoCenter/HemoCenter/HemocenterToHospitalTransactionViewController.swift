@@ -57,6 +57,11 @@ class HemocenterToHospitalTransactionViewController: UITableViewController {
     }
     
     
+    @IBAction func makeTransaction(sender: UIBarButtonItem) {
+        
+        
+    }
+    
     @IBAction func bloodVolumeStepper(sender: UIStepper) {
         bloodVolume.text = String(stringInterpolationSegment: sender.value)
         if rightHospital != nil && sender.value > 0 {

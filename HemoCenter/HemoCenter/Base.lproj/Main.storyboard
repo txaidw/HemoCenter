@@ -456,7 +456,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hemocentro_rp_vs1" translatesAutoresizingMaskIntoConstraints="NO" id="14z-6A-2Yj">
-                                <rect key="frame" x="70" y="101.5" width="460" height="333"/>
+                                <rect key="frame" x="70" y="102" width="460" height="333"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="333" id="iOn-Gl-uVJ"/>
@@ -880,7 +880,13 @@
                             <outlet property="delegate" destination="suW-El-hNH" id="IR6-ji-Dic"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="AnH-Sr-5io"/>
+                    <navigationItem key="navigationItem" id="AnH-Sr-5io">
+                        <barButtonItem key="leftBarButtonItem" title="Sair" id="FVx-wW-yre">
+                            <connections>
+                                <action selector="sair:" destination="suW-El-hNH" id="hIg-x3-qov"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NTS-4i-xQQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -929,22 +935,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="hemocentro_rp_vs1" translatesAutoresizingMaskIntoConstraints="NO" id="O17-QC-MZA">
-                                <rect key="frame" x="-100" y="120" width="800" height="95.5"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" image="hemocentro_rp_vs1" translatesAutoresizingMaskIntoConstraints="NO" id="O17-QC-MZA">
+                                <rect key="frame" x="-100" y="120" width="800" height="96"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Wb-ns-dTy">
-                                <rect key="frame" x="16" y="315" width="568" height="184.5"/>
+                                <rect key="frame" x="16" y="315" width="568" height="185"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Log Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7le-AK-uI4">
-                                        <rect key="frame" x="209" y="0.0" width="150.5" height="20.5"/>
+                                        <rect key="frame" x="209" y="0.0" width="151" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Usuário:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ez2-I1-tc3">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Usuário:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ez2-I1-tc3">
                                         <rect key="frame" x="174" y="44" width="220" height="34"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.92140102386474609" green="0.90458077192306519" blue="0.895133376121521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -964,7 +970,7 @@
                                             <outlet property="delegate" destination="r39-17-Zpr" id="1Ux-GT-tCP"/>
                                         </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNM-eg-Xzf">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNM-eg-Xzf">
                                         <rect key="frame" x="263" y="154" width="42" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Entrar">
@@ -972,11 +978,11 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="TcC-Wd-1kP">
+                                    <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="TcC-Wd-1kP">
                                         <rect key="frame" x="274" y="159" width="20" height="20"/>
                                         <animations/>
                                     </activityIndicatorView>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Senha:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WRA-px-efI">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Senha:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WRA-px-efI">
                                         <rect key="frame" x="174" y="96" width="220" height="34"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.92140102386474609" green="0.90458077192306519" blue="0.895133376121521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1995,7 +2001,7 @@
                     <navigationItem key="navigationItem" id="yeY-5E-dOH">
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="Realizar Transação" id="RGD-W0-UQk">
                             <connections>
-                                <segue destination="VsG-xZ-KdA" kind="show" identifier="SaveTransactionSegue" id="El7-xo-BBN"/>
+                                <action selector="makeTransaction:" destination="poe-eb-zlZ" id="qo9-nW-un2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -2009,6 +2015,10 @@
                         <outlet property="save" destination="RGD-W0-UQk" id="BAi-AI-dmf"/>
                         <outlet property="spinner" destination="Mu0-AZ-nWr" id="1vy-ev-ANX"/>
                         <outlet property="type" destination="nx6-dP-zmr" id="ner-wB-qfI"/>
+                        <segue destination="VsG-xZ-KdA" kind="show" identifier="SaveTransactionSegue" id="gfv-rv-71B"/>
+                        <segue destination="7Az-bN-kbd" kind="popoverPresentation" identifier="LoginAdminConfirmation" popoverAnchorBarButtonItem="RGD-W0-UQk" id="QUX-gl-iWO">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
+                        </segue>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCi-Bm-0vJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2816,7 +2826,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4W8-OK-11V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4461" y="-5692"/>
+            <point key="canvasLocation" x="4469" y="-5692"/>
         </scene>
         <!--Transactions Table View Controller-->
         <scene sceneID="ZWN-cV-qBP">
@@ -2886,7 +2896,7 @@
         <!--Hosp to Hosp-->
         <scene sceneID="EHa-iY-JVs">
             <objects>
-                <tableViewController title="Hosp to Hosp" id="ay4-WG-O7n" customClass="HospitalToHospitalTransactionViewController" customModule="HemoCenter" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Hosp to Hosp" id="ay4-WG-O7n" customClass="HemocenterToHospitalTransactionViewController" customModule="HemoCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LkU-cj-54V">
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3106,7 +3116,7 @@
                     <navigationItem key="navigationItem" id="EFP-Yg-Y52">
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="Realizar Transação" id="2NZ-8X-RN1">
                             <connections>
-                                <segue destination="VsG-xZ-KdA" kind="show" identifier="SaveTransactionSegue" id="HAY-Kl-oUJ"/>
+                                <action selector="makeTransaction:" destination="ay4-WG-O7n" id="9nN-YP-y16"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -3114,12 +3124,15 @@
                         <outlet property="bloodVolume" destination="WIi-kY-AJJ" id="6D2-pE-zRL"/>
                         <outlet property="bloodVolumeStepperValue" destination="arU-fX-mf3" id="4a9-Ii-HVM"/>
                         <outlet property="directionButton" destination="p38-Ke-OOQ" id="a9r-qc-nRR"/>
-                        <outlet property="leftButton" destination="UfD-TF-OmM" id="gRk-XY-Ggd"/>
                         <outlet property="rh" destination="kic-fa-fnw" id="Lkr-cf-gal"/>
                         <outlet property="rightButton" destination="C8h-1I-MYh" id="HwC-B7-WS9"/>
                         <outlet property="save" destination="2NZ-8X-RN1" id="9RU-X9-b0s"/>
                         <outlet property="spinner" destination="df1-89-ndo" id="oAB-Wp-Dt6"/>
                         <outlet property="type" destination="pOf-h0-nYu" id="G5a-FT-c2X"/>
+                        <segue destination="VsG-xZ-KdA" kind="show" identifier="SaveTransactionSegue" id="eNJ-hF-PlI"/>
+                        <segue destination="7Az-bN-kbd" kind="popoverPresentation" identifier="LoginAdminConfirmation" popoverAnchorBarButtonItem="2NZ-8X-RN1" id="kjW-Mv-27X">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
+                        </segue>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ha-0G-OGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3171,13 +3184,146 @@
             </objects>
             <point key="canvasLocation" x="5440" y="-5311"/>
         </scene>
+        <!--Hemocentro-->
+        <scene sceneID="oDe-kq-HZY">
+            <objects>
+                <viewController id="7Az-bN-kbd" customClass="LoginConfirmationViewController" customModule="HemoCenter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LZ6-Sg-aR3"/>
+                        <viewControllerLayoutGuide type="bottom" id="KLJ-dW-Oy5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jKq-WU-hmL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="099-OR-B8R">
+                                <rect key="frame" x="16" y="157" width="568" height="287"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Log Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drt-iY-oPs">
+                                        <rect key="frame" x="209" y="48" width="151" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Usuário:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7G0-2V-4eC">
+                                        <rect key="frame" x="24" y="93" width="520" height="34"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.9214010239" green="0.90458077189999997" blue="0.89513337609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="gen-Rf-UNo"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.65857237580000005" green="0.51475006339999996" blue="0.50418746469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="7Az-bN-kbd" id="Riu-ba-DW2"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ym4-TW-0Vt">
+                                        <rect key="frame" x="263" y="209" width="42" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Entrar">
+                                            <color key="titleColor" red="0.9214010239" green="0.90458077189999997" blue="0.89513337609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="d0L-rG-Xek">
+                                        <rect key="frame" x="274" y="214" width="20" height="20"/>
+                                        <animations/>
+                                    </activityIndicatorView>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Senha:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eGz-mb-0QP">
+                                        <rect key="frame" x="24" y="151" width="520" height="34"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.9214010239" green="0.90458077189999997" blue="0.89513337609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="m36-tm-p8l"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.65857237580000005" green="0.51475006339999996" blue="0.50418746469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="7Az-bN-kbd" id="sun-AM-fWg"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="eGz-mb-0QP" firstAttribute="top" secondItem="7G0-2V-4eC" secondAttribute="bottom" constant="24" id="3bK-9U-ydx"/>
+                                    <constraint firstAttribute="centerX" secondItem="Drt-iY-oPs" secondAttribute="centerX" id="C2r-xk-9T9"/>
+                                    <constraint firstItem="7G0-2V-4eC" firstAttribute="leading" secondItem="099-OR-B8R" secondAttribute="leading" constant="24" id="C6f-8y-7L3"/>
+                                    <constraint firstAttribute="trailing" secondItem="7G0-2V-4eC" secondAttribute="trailing" constant="24" id="FZW-rA-Xrq"/>
+                                    <constraint firstItem="7G0-2V-4eC" firstAttribute="top" secondItem="Drt-iY-oPs" secondAttribute="bottom" constant="24" id="Gbh-JD-z8n"/>
+                                    <constraint firstItem="ym4-TW-0Vt" firstAttribute="top" secondItem="eGz-mb-0QP" secondAttribute="bottom" constant="24" id="KOD-1M-ciW"/>
+                                    <constraint firstItem="7G0-2V-4eC" firstAttribute="top" secondItem="Drt-iY-oPs" secondAttribute="bottom" constant="48" id="Kov-o3-ycz"/>
+                                    <constraint firstAttribute="centerX" secondItem="d0L-rG-Xek" secondAttribute="centerX" id="N78-vz-kZx"/>
+                                    <constraint firstItem="7G0-2V-4eC" firstAttribute="top" secondItem="Drt-iY-oPs" secondAttribute="bottom" constant="24" id="Q0Q-4V-fJ5"/>
+                                    <constraint firstAttribute="centerX" secondItem="eGz-mb-0QP" secondAttribute="centerX" id="bKt-qn-Eyr"/>
+                                    <constraint firstItem="ym4-TW-0Vt" firstAttribute="top" secondItem="eGz-mb-0QP" secondAttribute="bottom" constant="24" id="dhT-JR-IBJ"/>
+                                    <constraint firstItem="eGz-mb-0QP" firstAttribute="leading" secondItem="099-OR-B8R" secondAttribute="leading" constant="24" id="fyp-PH-hVO"/>
+                                    <constraint firstItem="eGz-mb-0QP" firstAttribute="top" secondItem="7G0-2V-4eC" secondAttribute="bottom" constant="24" id="iuv-M3-8KJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="eGz-mb-0QP" secondAttribute="trailing" constant="24" id="jNh-dh-TzK"/>
+                                    <constraint firstItem="Drt-iY-oPs" firstAttribute="top" secondItem="099-OR-B8R" secondAttribute="top" constant="48" id="kIO-BB-MdH"/>
+                                    <constraint firstAttribute="bottom" secondItem="ym4-TW-0Vt" secondAttribute="bottom" constant="48" id="nEM-8o-BvU"/>
+                                    <constraint firstItem="ym4-TW-0Vt" firstAttribute="centerY" secondItem="d0L-rG-Xek" secondAttribute="centerY" id="v3W-TX-1I4"/>
+                                    <constraint firstAttribute="centerX" secondItem="7G0-2V-4eC" secondAttribute="centerX" id="wQM-eJ-Wfg"/>
+                                    <constraint firstAttribute="centerX" secondItem="ym4-TW-0Vt" secondAttribute="centerX" id="xvY-49-xUO"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Kov-o3-ycz"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.44376191500000001" green="0.080728165810000002" blue="0.064713902769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="099-OR-B8R" firstAttribute="trailing" secondItem="jKq-WU-hmL" secondAttribute="trailingMargin" id="APh-Ig-JpR"/>
+                            <constraint firstItem="099-OR-B8R" firstAttribute="leading" secondItem="jKq-WU-hmL" secondAttribute="leadingMargin" id="HwM-4m-VFL"/>
+                            <constraint firstAttribute="centerX" secondItem="099-OR-B8R" secondAttribute="centerX" id="pvb-Uy-Qea"/>
+                            <constraint firstAttribute="centerY" secondItem="099-OR-B8R" secondAttribute="centerY" id="sQ9-BI-jvE"/>
+                            <constraint firstItem="099-OR-B8R" firstAttribute="leading" secondItem="jKq-WU-hmL" secondAttribute="leading" constant="140" id="wJD-eK-xIY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="wJD-eK-xIY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" title="Hemocentro" id="VUh-xD-Tyy"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="d0L-rG-Xek" id="gIv-FM-1o0"/>
+                        <outlet property="loginButton" destination="ym4-TW-0Vt" id="FeM-Ud-fjo"/>
+                        <outlet property="messageLogLabel" destination="Drt-iY-oPs" id="G42-XI-IxC"/>
+                        <outlet property="passwordTextField" destination="eGz-mb-0QP" id="p5v-fq-gwo"/>
+                        <outlet property="userTextField" destination="7G0-2V-4eC" id="FFA-yR-ErO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rG1-k2-dpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4469" y="-3808"/>
+        </scene>
     </scenes>
     <resources>
         <image name="hemocentro_rp_vs1" width="800" height="426"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ygd-3q-b13"/>
         <segue reference="8VY-r6-cEo"/>
-        <segue reference="HAY-Kl-oUJ"/>
+        <segue reference="eNJ-hF-PlI"/>
+        <segue reference="QUX-gl-iWO"/>
+        <segue reference="Ygd-3q-b13"/>
     </inferredMetricsTieBreakers>
 </document>

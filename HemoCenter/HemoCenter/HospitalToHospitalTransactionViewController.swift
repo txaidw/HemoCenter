@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HospitalToHospitalTransactionViewController: UITableViewController {
+class HospitalToHospitalTransactionViewController: UITableViewController, LoginConfirmationProtocol {
     
     var hospitals:[Hospital]?
     
@@ -27,6 +27,7 @@ class HospitalToHospitalTransactionViewController: UITableViewController {
             }
         })
     }
+    var currentUserAuthentication:User?
     
     @IBOutlet weak var directionButton: UIButton!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
@@ -83,6 +84,20 @@ class HospitalToHospitalTransactionViewController: UITableViewController {
         sender.selected = !sender.selected
     }
     
+    
+    @IBAction func makeTransaction(sender: UIBarButtonItem) {
+        let amount = Int(bloodVolumeStepperValue.value)
+        let limitDonation = 100
+        let authenticated = !(AppDelegate.$.userLoggedIn?.roleCode == 1) || (self.currentUserAuthentication?.roleCode == 1)
+        if ((amount > limitDonation) && authenticated) || (amount <= limitDonation) {
+            // verificação de nivel de usuario
+            performSegueWithIdentifier("SaveTransactionSegue", sender: sender)
+        } else {
+            performSegueWithIdentifier("LoginAdminConfirmation", sender: sender)
+        }
+    
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let dest = segue.destinationViewController as? HospitalSearchViewController {
             dest.tableData = hospitals!
@@ -97,6 +112,8 @@ class HospitalToHospitalTransactionViewController: UITableViewController {
             }
         }
         else if let dest = segue.destinationViewController as? StatusViewController {
+            let amount = Int(bloodVolumeStepperValue.value)
+            
             var from:Hospital = leftHospital!
             var to:Hospital = rightHospital!
             if directionButton.selected {
@@ -105,7 +122,7 @@ class HospitalToHospitalTransactionViewController: UITableViewController {
             }
             let bt = BloodType(type: type.selectedSegmentIndex, rh: rh.selectedSegmentIndex)!
             
-            let transaction = Transaction(sourceCNPJ: from.CNPJ, destinationCNPJ: to.CNPJ, bloodType: bt, amountMl: Int(bloodVolumeStepperValue.value))
+            let transaction = Transaction(sourceCNPJ: from.CNPJ, destinationCNPJ: to.CNPJ, bloodType: bt, amountMl: amount)
             let token = AppDelegate.$.userKeychainToken!
             dest.initialMessage = "Registrando Transação"
             dest.networkingClosure = { (closure:(success: Bool, message: String) -> ()) in
