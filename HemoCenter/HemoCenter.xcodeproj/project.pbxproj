@@ -32,6 +32,7 @@
 		E99FA0B91B32B41C00C59430 /* NewHospitalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FA0B81B32B41C00C59430 /* NewHospitalTableViewController.swift */; };
 		E99FA0BD1B32BA4C00C59430 /* DonorReportDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FA0BC1B32BA4C00C59430 /* DonorReportDetailTableViewController.swift */; };
 		E99FA0BF1B32C1D800C59430 /* HospitalReportsDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FA0BE1B32C1D800C59430 /* HospitalReportsDetailTableViewController.swift */; };
+		E9A428F41B397ADC00F0F266 /* LoginConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A428F31B397ADC00F0F266 /* LoginConfirmationViewController.swift */; };
 		E9B885AF1B224DA5002B9369 /* NewDonorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B885AE1B224DA5002B9369 /* NewDonorTableViewController.swift */; };
 		E9B974FE1B32F558006FC5C4 /* TransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B974FD1B32F558006FC5C4 /* TransactionsTableViewController.swift */; };
 		E9B975041B32F6B2006FC5C4 /* DonationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B975031B32F6B2006FC5C4 /* DonationsTableViewController.swift */; };
@@ -120,6 +121,7 @@
 		E99FA0B81B32B41C00C59430 /* NewHospitalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHospitalTableViewController.swift; sourceTree = "<group>"; };
 		E99FA0BC1B32BA4C00C59430 /* DonorReportDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonorReportDetailTableViewController.swift; sourceTree = "<group>"; };
 		E99FA0BE1B32C1D800C59430 /* HospitalReportsDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalReportsDetailTableViewController.swift; sourceTree = "<group>"; };
+		E9A428F31B397ADC00F0F266 /* LoginConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginConfirmationViewController.swift; sourceTree = "<group>"; };
 		E9B885AE1B224DA5002B9369 /* NewDonorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDonorTableViewController.swift; sourceTree = "<group>"; };
 		E9B974FD1B32F558006FC5C4 /* TransactionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewController.swift; sourceTree = "<group>"; };
 		E9B975031B32F6B2006FC5C4 /* DonationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationsTableViewController.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 				E99FA0B01B32665100C59430 /* HospitalSearchViewController.swift */,
 				E95A204A1B2969E1006222F1 /* StatusViewController.swift */,
 				E9296F581B1DF7C1000D5DC7 /* LoginViewController.swift */,
+				E9A428F31B397ADC00F0F266 /* LoginConfirmationViewController.swift */,
 				E9D8E64E1B23A1BE0003A526 /* AboutViewController.swift */,
 			);
 			name = General;
@@ -422,6 +425,7 @@
 				7120C3541B3203F900EC75A0 /* Instituition.swift in Sources */,
 				E9B975041B32F6B2006FC5C4 /* DonationsTableViewController.swift in Sources */,
 				E99FA0AA1B32586F00C59430 /* NSString+Filtered.m in Sources */,
+				E9A428F41B397ADC00F0F266 /* LoginConfirmationViewController.swift in Sources */,
 				E9CD60EF1B2943CD007E9540 /* UserSearchViewController.swift in Sources */,
 				7120C3521B3203F900EC75A0 /* Hemocenter.swift in Sources */,
 				7120C3531B3203F900EC75A0 /* Hospital.swift in Sources */,

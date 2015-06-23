@@ -343,7 +343,7 @@ class WebServiceOperations {
 }
 
 
-    // MARK: Old shit
+
 //    class func newDonor(authKey: String, name: String, address: String, phone: Int, email: String, CPF: String, bloodType: BloodType, completionHandler: (success: Bool, message: String) -> Void) {
 //        let values = [
 //            "operation" : 2,
