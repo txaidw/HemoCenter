@@ -53,6 +53,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     self?.messageLogLabel.text = message
                     AppDelegate.$.userKeychainToken = authKey
                     AppDelegate.$.userLoggedIn = user
+
+                    
+                    WebServiceOperations.hemocenterInfo(authKey!, completionHandler: { (success, message, hemocenter) -> Void in
+                        if success {
+                            AppDelegate.$.hemocenter = hemocenter
+                        }
+                        else {
+                            print("err" + message)
+                        }
+                    })
                     delay(0.4) {
                         self?.performSegueWithIdentifier("loginSuccessful", sender: self)
                     }

@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var $:AppDelegate { get { return UIApplication.sharedApplication().delegate as! AppDelegate } }
     var userKeychainToken:String?
     var userLoggedIn:User?
+    var hemocenter:Hemocenter?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
