@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HemocenterToHospitalTransactionViewController: UITableViewController {
+class HemocenterToHospitalTransactionViewController: UITableViewController, LoginConfirmationProtocol {
     
     var hospitals:[Hospital]?
     
@@ -26,7 +26,8 @@ class HemocenterToHospitalTransactionViewController: UITableViewController {
             }
             })
     }
-    
+    var currentUserAuthentication:User?
+
     @IBOutlet weak var directionButton: UIButton!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var rightButton: UIButton!
@@ -58,8 +59,15 @@ class HemocenterToHospitalTransactionViewController: UITableViewController {
     
     
     @IBAction func makeTransaction(sender: UIBarButtonItem) {
-        
-        
+        let amount = Int(bloodVolumeStepperValue.value)
+        let limitDonation = 250
+        let authenticated = (AppDelegate.$.userLoggedIn?.roleCode == 1) || (self.currentUserAuthentication?.roleCode == 1)
+        if ((amount > limitDonation) && authenticated) || (amount <= limitDonation) {
+            // verificação de nivel de usuario
+            performSegueWithIdentifier("SaveTransactionSegue", sender: sender)
+        } else {
+            performSegueWithIdentifier("LoginAdminConfirmation", sender: sender)
+        }
     }
     
     @IBAction func bloodVolumeStepper(sender: UIStepper) {
@@ -99,6 +107,8 @@ class HemocenterToHospitalTransactionViewController: UITableViewController {
             dest.networkingClosure = { (closure:(success: Bool, message: String) -> ()) in
                 WebServiceOperations.newTransaction(token, transaction: transaction, completionHandler: closure)
             }
+        } else if let dest = segue.destinationViewController as? LoginConfirmationViewController {
+            dest.delegate = self
         }
     }
     

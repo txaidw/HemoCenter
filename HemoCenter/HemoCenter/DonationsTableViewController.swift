@@ -25,21 +25,6 @@ class DonationsTableViewController: UITableViewController, UISearchResultsUpdati
                 self?.tableView.reloadData()
             }
             })
-        //
-        //
-        //        self.resultSearchController = ({
-        //            let controller = UISearchController(searchResultsController: nil)
-        //            controller.searchResultsUpdater = self
-        //            controller.dimsBackgroundDuringPresentation = false
-        //            controller.searchBar.sizeToFit()
-        //
-        //            self.tableView.tableHeaderView = controller.searchBar
-        //
-        //            return controller
-        //        })()
-        //
-        //        // Reload the table
-        //        self.tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -80,8 +65,8 @@ class DonationsTableViewController: UITableViewController, UISearchResultsUpdati
             cell.detailTextLabel?.text = filteredTableData[indexPath.row].CPF
             return cell
         } else {
-            cell.textLabel?.text = String(tableData[indexPath.row].amountMl)
-            cell.detailTextLabel?.text = tableData[indexPath.row].donorCPF
+            cell.textLabel?.text = String(tableData[indexPath.row].amountMl) + " mL  "
+            cell.detailTextLabel?.text = "Doador: " + tableData[indexPath.row].donorCPF
             return cell
         }
     }

@@ -87,8 +87,8 @@ class HospitalToHospitalTransactionViewController: UITableViewController, LoginC
     
     @IBAction func makeTransaction(sender: UIBarButtonItem) {
         let amount = Int(bloodVolumeStepperValue.value)
-        let limitDonation = 100
-        let authenticated = !(AppDelegate.$.userLoggedIn?.roleCode == 1) || (self.currentUserAuthentication?.roleCode == 1)
+        let limitDonation = 250
+        let authenticated = (AppDelegate.$.userLoggedIn?.roleCode == 1) || (self.currentUserAuthentication?.roleCode == 1)
         if ((amount > limitDonation) && authenticated) || (amount <= limitDonation) {
             // verificação de nivel de usuario
             performSegueWithIdentifier("SaveTransactionSegue", sender: sender)
@@ -128,6 +128,8 @@ class HospitalToHospitalTransactionViewController: UITableViewController, LoginC
             dest.networkingClosure = { (closure:(success: Bool, message: String) -> ()) in
                 WebServiceOperations.newTransaction(token, transaction: transaction, completionHandler: closure)
             }
+        } else if let dest = segue.destinationViewController as? LoginConfirmationViewController {
+            dest.delegate = self
         }
     }
     

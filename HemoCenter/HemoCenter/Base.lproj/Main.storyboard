@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.65857237577438354" green="0.51475006341934204" blue="0.50418746471405029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.87722986936569214" green="0.17274713516235352" blue="0.14331340789794922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="19r-ez-NyW">
                                 <cells>
@@ -295,6 +295,7 @@
                                                                 <segment title="Positivo"/>
                                                                 <segment title="Negativo"/>
                                                             </segments>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </segmentedControl>
                                                     </subviews>
                                                     <animations/>
@@ -344,6 +345,7 @@
                                                                 <segment title="AB"/>
                                                                 <segment title="O"/>
                                                             </segments>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </segmentedControl>
                                                     </subviews>
                                                     <animations/>
@@ -377,7 +379,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="BC4-Be-Ob5">
                         <barButtonItem key="rightBarButtonItem" title="Salvar" id="Kre-yV-Y1E">
-                            <color key="tintColor" red="0.87722986936569214" green="0.17274713516235352" blue="0.14331340789794922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="VsG-xZ-KdA" kind="show" id="NS4-9N-cf3"/>
                             </connections>
@@ -426,6 +428,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.65857237577438354" green="0.51475006341934204" blue="0.50418746471405029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="jtt-WE-0yV" secondAttribute="trailing" constant="44" id="0Qx-wD-MOj"/>
                             <constraint firstAttribute="centerX" secondItem="Ado-vm-17v" secondAttribute="centerX" id="8oz-qa-LJY"/>
@@ -466,6 +469,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.65857237577438354" green="0.51475006341934204" blue="0.50418746471405029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="14z-6A-2Yj" secondAttribute="centerX" id="RgO-Jz-jOB"/>
                             <constraint firstAttribute="centerY" secondItem="14z-6A-2Yj" secondAttribute="centerY" id="tLV-7Z-aSF"/>
@@ -486,6 +490,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.92140102386474609" green="0.90458077192306519" blue="0.895133376121521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexColor" red="0.99952012300491333" green="0.62687027454376221" blue="0.59911811351776123" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.40697291493415833" green="0.76422029733657837" blue="0.50290173292160034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -882,6 +887,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="AnH-Sr-5io">
                         <barButtonItem key="leftBarButtonItem" title="Sair" id="FVx-wW-yre">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="sair:" destination="suW-El-hNH" id="hIg-x3-qov"/>
                             </connections>
@@ -900,6 +906,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.4437619149684906" green="0.080728165805339813" blue="0.064713902771472931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
@@ -1025,6 +1032,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.4437619149684906" green="0.080728165805339813" blue="0.064713902771472931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="1Wb-ns-dTy" secondAttribute="centerX" id="ARj-Ih-ZLs"/>
                             <constraint firstItem="1Wb-ns-dTy" firstAttribute="leading" secondItem="miC-kh-gd7" secondAttribute="leadingMargin" id="Da7-py-LtV"/>
@@ -1069,6 +1077,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.4437619149684906" green="0.080728165805339813" blue="0.064713902771472931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1089,6 +1098,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.4437619149684906" green="0.080728165805339813" blue="0.064713902771472931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1109,6 +1119,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.4437619149684906" green="0.080728165805339813" blue="0.064713902771472931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1178,6 +1189,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.44376191500000001" green="0.080728165810000002" blue="0.064713902769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1198,6 +1210,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.44376191500000001" green="0.080728165810000002" blue="0.064713902769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1218,6 +1231,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.44376191500000001" green="0.080728165810000002" blue="0.064713902769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1238,6 +1252,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.44376191500000001" green="0.080728165810000002" blue="0.064713902769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1258,6 +1273,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.65857237580000005" green="0.51475006339999996" blue="0.50418746469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="cni-qC-icY" detailTextLabel="6pe-jp-Sf4" style="IBUITableViewCellStyleValue1" id="oTP-77-Hek">
                                 <rect key="frame" x="0.0" y="22" width="600" height="44"/>
@@ -1307,6 +1323,7 @@
                                 <segment title="Todos"/>
                                 <segment title="Sangue Bom"/>
                             </segments>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="sangueBomSegmentedControl:" destination="l4P-El-F4s" eventType="valueChanged" id="yLu-2l-sKe"/>
                             </connections>
@@ -1326,7 +1343,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.65857237580000005" green="0.51475006339999996" blue="0.50418746469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.88828039169311523" green="0.16177582740783691" blue="0.098115243017673492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="yyh-ze-c3K">
                                 <cells>
@@ -1341,6 +1358,7 @@
                                                     <rect key="frame" x="237" y="15" width="127" height="30"/>
                                                     <animations/>
                                                     <state key="normal" title="Selecionar Doador">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -1527,6 +1545,7 @@
                                                                 <segment title="Positivo"/>
                                                                 <segment title="Negativo"/>
                                                             </segments>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </segmentedControl>
                                                     </subviews>
                                                     <animations/>
@@ -1576,6 +1595,7 @@
                                                                 <segment title="AB"/>
                                                                 <segment title="O"/>
                                                             </segments>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </segmentedControl>
                                                     </subviews>
                                                     <animations/>
@@ -1620,16 +1640,18 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAE-LR-6Dx">
                                                     <rect key="frame" x="544" y="20" width="40" height="20"/>
                                                     <animations/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="40" id="Qs5-yT-GOs"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="1000" stepValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="ZnU-iF-bEB">
                                                     <rect key="frame" x="434" y="15" width="94" height="29"/>
                                                     <animations/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <connections>
                                                         <action selector="qtdStepperAction:" destination="Dba-Dn-2Ij" eventType="valueChanged" id="v2e-Jh-yWG"/>
                                                     </connections>
@@ -1669,6 +1691,7 @@
                                                         <segment title="Hospital"/>
                                                         <segment title="Hemocentro"/>
                                                     </segments>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <connections>
                                                         <action selector="HospitalHemocenterSelection:" destination="Dba-Dn-2Ij" eventType="valueChanged" id="K87-9T-jng"/>
                                                     </connections>
@@ -1733,6 +1756,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="47O-Qm-bWJ" detailTextLabel="9xc-8d-oBm" rowHeight="56" style="IBUITableViewCellStyleSubtitle" id="2s3-CM-7xB">
                                 <rect key="frame" x="0.0" y="22" width="600" height="56"/>
@@ -1782,7 +1806,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.65857237580000005" green="0.51475006339999996" blue="0.50418746469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.88828039169999995" green="0.16177582739999999" blue="0.098115243020000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="tnY-UM-xW2">
                                 <cells>
@@ -1807,6 +1831,7 @@
                                                     <rect key="frame" x="450" y="75" width="67" height="34"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <state key="normal" title="Hospital"/>
                                                     <connections>
                                                         <segue destination="lUn-eB-vVU" kind="popoverPresentation" identifier="RightHospitalSegue" popoverAnchorView="a9N-tm-CJ6" id="oVz-h3-FNe">
@@ -1818,6 +1843,7 @@
                                                     <rect key="frame" x="84" y="75" width="67" height="34"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <state key="normal" title="Hospital"/>
                                                     <connections>
                                                         <segue destination="lUn-eB-vVU" kind="popoverPresentation" identifier="LeftHospitalSegue" popoverAnchorView="Ghf-qV-ssf" id="moZ-CB-zxt">
@@ -1873,6 +1899,7 @@
                                                                 <segment title="Positivo"/>
                                                                 <segment title="Negativo"/>
                                                             </segments>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </segmentedControl>
                                                     </subviews>
                                                     <animations/>
@@ -1922,6 +1949,7 @@
                                                                 <segment title="AB"/>
                                                                 <segment title="O"/>
                                                             </segments>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </segmentedControl>
                                                     </subviews>
                                                     <animations/>
@@ -1962,6 +1990,7 @@
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="1000" stepValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="2sk-wG-ued">
                                                     <rect key="frame" x="406" y="15" width="94" height="29"/>
                                                     <animations/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <connections>
                                                         <action selector="bloodVolumeStepper:" destination="poe-eb-zlZ" eventType="valueChanged" id="z13-1x-teQ"/>
                                                     </connections>
@@ -1969,11 +1998,12 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyu-jc-WCv">
                                                     <rect key="frame" x="516" y="20" width="68" height="20"/>
                                                     <animations/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="68" id="eKf-hQ-AUa"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2000,6 +2030,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="yeY-5E-dOH">
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="Realizar Transação" id="RGD-W0-UQk">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="makeTransaction:" destination="poe-eb-zlZ" id="qo9-nW-un2"/>
                             </connections>
@@ -2034,7 +2065,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.65857237580000005" green="0.51475006339999996" blue="0.50418746469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.87722986940000003" green="0.17274713520000001" blue="0.14331340789999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="gfT-xH-SD3">
                                 <cells>
@@ -2299,7 +2330,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="jsp-Va-Mph">
                         <barButtonItem key="rightBarButtonItem" title="Salvar" id="KyT-Jw-xgV">
-                            <color key="tintColor" red="0.87722986940000003" green="0.17274713520000001" blue="0.14331340789999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="VsG-xZ-KdA" kind="show" id="ZDA-mx-mP3"/>
                             </connections>
@@ -2323,6 +2354,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.44376191500000001" green="0.080728165810000002" blue="0.064713902769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2343,7 +2375,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.65857237580000005" green="0.51475006339999996" blue="0.50418746469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.88828039169999995" green="0.16177582739999999" blue="0.098115243020000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="yIO-R1-FWq">
                                 <cells>
@@ -2516,6 +2548,7 @@
                                                                 <segment title="Positivo"/>
                                                                 <segment title="Negativo"/>
                                                             </segments>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </segmentedControl>
                                                     </subviews>
                                                     <animations/>
@@ -2565,6 +2598,7 @@
                                                                 <segment title="AB"/>
                                                                 <segment title="O"/>
                                                             </segments>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </segmentedControl>
                                                     </subviews>
                                                     <animations/>
@@ -2639,6 +2673,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.65857237580000005" green="0.51475006339999996" blue="0.50418746469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="eEn-eY-d7y" detailTextLabel="3fz-Jr-njm" style="IBUITableViewCellStyleValue1" id="n2k-jn-0xg">
                                 <rect key="frame" x="0.0" y="22" width="600" height="44"/>
@@ -2694,7 +2729,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.65857237580000005" green="0.51475006339999996" blue="0.50418746469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.88828039169999995" green="0.16177582739999999" blue="0.098115243020000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="mpg-kF-bFe">
                                 <cells>
@@ -2837,6 +2872,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="D6V-V5-3Yt" detailTextLabel="A3S-wg-9Z7" rowHeight="53" style="IBUITableViewCellStyleSubtitle" id="G1s-ZP-UMS">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -2847,7 +2883,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.29019607843137257" green="0.019607843137254902" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A3S-wg-9Z7">
@@ -2882,6 +2918,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.44376191500000001" green="0.080728165810000002" blue="0.064713902769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2902,7 +2939,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.65857237580000005" green="0.51475006339999996" blue="0.50418746469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.88828039169999995" green="0.16177582739999999" blue="0.098115243020000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="olT-Qk-MGZ">
                                 <cells>
@@ -2927,7 +2964,10 @@
                                                     <rect key="frame" x="450" y="75" width="67" height="34"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <state key="normal" title="Hospital"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <state key="normal" title="Hospital">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
                                                     <connections>
                                                         <segue destination="lUn-eB-vVU" kind="popoverPresentation" identifier="RightHospitalSegue" popoverAnchorView="C8h-1I-MYh" id="8VY-r6-cEo">
                                                             <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
@@ -2938,7 +2978,10 @@
                                                     <rect key="frame" x="67" y="75" width="100" height="34"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <state key="normal" title="Hemocentro"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <state key="normal" title="Hemocentro">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
                                                 </button>
                                                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="df1-89-ndo">
                                                     <rect key="frame" x="282" y="74" width="37" height="37"/>
@@ -2988,6 +3031,7 @@
                                                                 <segment title="Positivo"/>
                                                                 <segment title="Negativo"/>
                                                             </segments>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </segmentedControl>
                                                     </subviews>
                                                     <animations/>
@@ -3037,6 +3081,7 @@
                                                                 <segment title="AB"/>
                                                                 <segment title="O"/>
                                                             </segments>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </segmentedControl>
                                                     </subviews>
                                                     <animations/>
@@ -3077,6 +3122,7 @@
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="1000" stepValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="arU-fX-mf3">
                                                     <rect key="frame" x="406" y="15" width="94" height="29"/>
                                                     <animations/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <connections>
                                                         <action selector="bloodVolumeStepper:" destination="ay4-WG-O7n" eventType="valueChanged" id="OAK-LI-2pB"/>
                                                     </connections>
@@ -3088,7 +3134,7 @@
                                                         <constraint firstAttribute="width" constant="68" id="8lp-Dc-zwg"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -3115,6 +3161,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="EFP-Yg-Y52">
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="Realizar Transação" id="2NZ-8X-RN1">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="makeTransaction:" destination="ay4-WG-O7n" id="9nN-YP-y16"/>
                             </connections>
@@ -3148,6 +3195,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="3cZ-1n-3Rn" detailTextLabel="osC-ac-EMJ" rowHeight="53" style="IBUITableViewCellStyleValue2" id="L2E-xS-5OA">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -3158,7 +3206,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.29019607843137257" green="0.019607843137254902" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="osC-ac-EMJ">
@@ -3199,11 +3247,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="099-OR-B8R">
                                 <rect key="frame" x="16" y="157" width="568" height="287"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Log Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drt-iY-oPs">
-                                        <rect key="frame" x="209" y="48" width="151" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Necessario privilégios de gerente" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drt-iY-oPs">
+                                        <rect key="frame" x="157" y="48" width="255" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Usuário:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7G0-2V-4eC">
@@ -3289,6 +3337,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.44376191500000001" green="0.080728165810000002" blue="0.064713902769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="099-OR-B8R" firstAttribute="trailing" secondItem="jKq-WU-hmL" secondAttribute="trailingMargin" id="APh-Ig-JpR"/>
                             <constraint firstItem="099-OR-B8R" firstAttribute="leading" secondItem="jKq-WU-hmL" secondAttribute="leadingMargin" id="HwM-4m-VFL"/>
@@ -3321,9 +3370,9 @@
         <image name="hemocentro_rp_vs1" width="800" height="426"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="HX3-Rf-VcW"/>
+        <segue reference="kjW-Mv-27X"/>
         <segue reference="8VY-r6-cEo"/>
-        <segue reference="eNJ-hF-PlI"/>
-        <segue reference="QUX-gl-iWO"/>
-        <segue reference="Ygd-3q-b13"/>
+        <segue reference="ZDA-mx-mP3"/>
     </inferredMetricsTieBreakers>
 </document>
