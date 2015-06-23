@@ -161,6 +161,7 @@
 				7120C34C1B3203F900EC75A0 /* Manager.swift */,
 				7120C34D1B3203F900EC75A0 /* Transaction.swift */,
 				7120C34E1B3203F900EC75A0 /* User.swift */,
+				7182231F1B32C2AF00C3D312 /* Stock.swift */,
 				71EF12311B293E5E00FA6D2D /* WebServiceOperations.swift */,
 			);
 			name = Model;
@@ -556,6 +557,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = HemoCenter/Bridge.h;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -568,6 +570,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = HemoCenter/Bridge.h;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

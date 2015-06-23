@@ -87,7 +87,7 @@ class HospitalToHospitalTransactionViewController: UITableViewController, LoginC
     
     @IBAction func makeTransaction(sender: UIBarButtonItem) {
         let amount = Int(bloodVolumeStepperValue.value)
-        let limitDonation = 100
+        let limitDonation = 250
         let authenticated = (AppDelegate.$.userLoggedIn?.roleCode == 1) || (self.currentUserAuthentication?.roleCode == 1)
         if ((amount > limitDonation) && authenticated) || (amount <= limitDonation) {
             // verificação de nivel de usuario

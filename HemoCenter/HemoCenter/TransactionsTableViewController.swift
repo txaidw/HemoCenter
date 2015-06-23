@@ -25,21 +25,6 @@ class TransactionsTableViewController: UITableViewController, UISearchResultsUpd
                 self?.tableView.reloadData()
             }
         })
-//        
-//        
-//        self.resultSearchController = ({
-//            let controller = UISearchController(searchResultsController: nil)
-//            controller.searchResultsUpdater = self
-//            controller.dimsBackgroundDuringPresentation = false
-//            controller.searchBar.sizeToFit()
-//            
-//            self.tableView.tableHeaderView = controller.searchBar
-//            
-//            return controller
-//        })()
-//        
-//        // Reload the table
-//        self.tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {

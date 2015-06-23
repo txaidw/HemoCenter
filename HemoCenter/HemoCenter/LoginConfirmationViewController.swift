@@ -10,6 +10,7 @@ import UIKit
 
 protocol LoginConfirmationProtocol:class {
     var currentUserAuthentication:User? { get set }
+    func makeTransaction(sender: UIBarButtonItem)
 }
 
 class LoginConfirmationViewController: UIViewController {
@@ -34,31 +35,31 @@ class LoginConfirmationViewController: UIViewController {
     }
     
     func loginButtonAction() {
-        let user = ""
-        let password = ""
+        let user = userTextField.text
+        let password = passwordTextField.text
         activityIndicator.startAnimating()
         activityIndicator.alpha = 1.0
         loginButton.alpha = 0.0
         messageLogLabel.alpha = 0.0
                 
-        WebServiceOperations.login(user, password: password) { [weak self] (success, message, authKey, user) -> Void in
+        WebServiceOperations.login(user, password: password) { (success, message, authKey, user) -> Void in
             delay(0.8) {
                 if success {
-                    self?.messageLogLabel.text = message
-                    self?.delegate?.currentUserAuthentication = user
+                    self.messageLogLabel.text = message
+                    self.delegate?.currentUserAuthentication = user
                     delay(0.4) {
-                        self?.dismissViewControllerAnimated(true, completion: { () -> Void in
-                            self?.loginButtonAction()
+                        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+                            self.delegate?.makeTransaction(UIBarButtonItem())
                         })
                     }
                 } else {
-                    self?.messageLogLabel.text = message
+                    self.messageLogLabel.text = message
                     AppDelegate.$.userKeychainToken = nil
                 }
                 
-                self?.activityIndicator.alpha = 0.0
-                self?.loginButton.alpha = 1.0
-                self?.messageLogLabel.alpha = 1.0
+                self.activityIndicator.alpha = 0.0
+                self.loginButton.alpha = 1.0
+                self.messageLogLabel.alpha = 1.0
             }
         }
     }
