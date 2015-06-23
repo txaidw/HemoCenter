@@ -38,7 +38,7 @@ class Auth_DAO{
             $encrypted_password = $result['encryp_password'];
             $hash = $util->checkhashSSHA($salt, $password);
             if($hash == $encrypted_password){
-                return array("key" => $result['unique_id'], "status" => true);;
+                return array("key" => $result['unique_id'], "status" => true, "name" => $result['name'], "user_type"=> $result['user_type']);;
             } else {
                 return false;
             }
@@ -52,13 +52,14 @@ class Auth_DAO{
     //Check if an user is a management. Return true if yes or false if not
     public function isManagement($key){
         $conn = DB_Connect::connect();
-        $query = "select * from tb_users WHERE  (tb_users.unique_id = ?);";
+        $query = "select * from tb_users WHERE  (tb_users.unique_id LIKE ?);";
         $stmt = $conn->prepare($query);
         $stmt->execute(array($key));
 
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if($result['type'] == 1){
+       // echo $result['user_type'];
+        if($result['user_type'] == 1){
             return true;
         }else{
             return false;
