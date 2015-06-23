@@ -13,12 +13,18 @@ class HospitalReportsDetailTableViewController: UITableViewController {
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var cnpj: UILabel!
-
+    @IBOutlet weak var stock: UILabel!
     
     override func viewWillAppear(animated: Bool) {
         if let d = selectedHospital {
             name.text = d.name
             cnpj.text = d.CNPJ
+            
+            WebServiceOperations.getStock(AppDelegate.$.userKeychainToken!, CNPJ: d.CNPJ, completionHandler: { (success, message, stock) -> Void in
+                if success {
+                    self.stock.text = stock!.lista()
+                }
+            })
         }
     }
     
