@@ -159,6 +159,7 @@
 				7120C34C1B3203F900EC75A0 /* Manager.swift */,
 				7120C34D1B3203F900EC75A0 /* Transaction.swift */,
 				7120C34E1B3203F900EC75A0 /* User.swift */,
+				71EF12311B293E5E00FA6D2D /* WebServiceOperations.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -183,11 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				7120C32D1B32036000EC75A0 /* Model */,
+				E9A428F91B39855500F0F266 /* Views */,
 				E943FC5C1B1D503800F5A52D /* Controllers */,
-				E9174ED51B0A2D34000F57A5 /* AppDelegate.swift */,
-				E9174ED91B0A2D34000F57A5 /* Main.storyboard */,
-				E9174EDC1B0A2D34000F57A5 /* Images.xcassets */,
-				E9174EDE1B0A2D34000F57A5 /* LaunchScreen.xib */,
 				E9174ED31B0A2D34000F57A5 /* Supporting Files */,
 			);
 			path = HemoCenter;
@@ -196,6 +194,7 @@
 		E9174ED31B0A2D34000F57A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E9174ED51B0A2D34000F57A5 /* AppDelegate.swift */,
 				E99FA0A81B32586F00C59430 /* NSString+Filtered.h */,
 				E99FA0AF1B32591500C59430 /* Bridge.h */,
 				E99FA0A91B32586F00C59430 /* NSString+Filtered.m */,
@@ -209,7 +208,6 @@
 		E943FC5C1B1D503800F5A52D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E9CD60F51B294918007E9540 /* Model Access */,
 				E9D8E64C1B239DD80003A526 /* Navigation */,
 				E9D8E64D1B239DE10003A526 /* General */,
 				E9D8E6421B239BFC0003A526 /* Entries */,
@@ -230,12 +228,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E9CD60F51B294918007E9540 /* Model Access */ = {
+		E9A428F91B39855500F0F266 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				71EF12311B293E5E00FA6D2D /* WebServiceOperations.swift */,
+				E9174ED91B0A2D34000F57A5 /* Main.storyboard */,
+				E9174EDC1B0A2D34000F57A5 /* Images.xcassets */,
+				E9174EDE1B0A2D34000F57A5 /* LaunchScreen.xib */,
 			);
-			name = "Model Access";
+			name = Views;
 			sourceTree = "<group>";
 		};
 		E9D8E6411B239BA80003A526 /* Transactions */ = {
