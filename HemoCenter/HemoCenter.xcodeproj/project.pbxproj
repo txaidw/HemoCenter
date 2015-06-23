@@ -16,6 +16,7 @@
 		7120C3551B3203F900EC75A0 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120C34C1B3203F900EC75A0 /* Manager.swift */; };
 		7120C3561B3203F900EC75A0 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120C34D1B3203F900EC75A0 /* Transaction.swift */; };
 		7120C3571B3203F900EC75A0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120C34E1B3203F900EC75A0 /* User.swift */; };
+		718223201B32C2AF00C3D312 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7182231F1B32C2AF00C3D312 /* Stock.swift */; };
 		71EF12321B293E5E00FA6D2D /* WebServiceOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EF12311B293E5E00FA6D2D /* WebServiceOperations.swift */; };
 		E9174ED61B0A2D34000F57A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9174ED51B0A2D34000F57A5 /* AppDelegate.swift */; };
 		E9174EDB1B0A2D34000F57A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9174ED91B0A2D34000F57A5 /* Main.storyboard */; };
@@ -100,6 +101,7 @@
 		7120C34C1B3203F900EC75A0 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		7120C34D1B3203F900EC75A0 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		7120C34E1B3203F900EC75A0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7182231F1B32C2AF00C3D312 /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		71EF12311B293E5E00FA6D2D /* WebServiceOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceOperations.swift; sourceTree = "<group>"; };
 		71EF12331B293E9D00FA6D2D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		E9174ED01B0A2D34000F57A5 /* HemoCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HemoCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -408,6 +410,7 @@
 				7120C3501B3203F900EC75A0 /* Donor.swift in Sources */,
 				7120C3561B3203F900EC75A0 /* Transaction.swift in Sources */,
 				7120C3571B3203F900EC75A0 /* User.swift in Sources */,
+				718223201B32C2AF00C3D312 /* Stock.swift in Sources */,
 				E9D8E6461B239D890003A526 /* DonorReportTableViewController.swift in Sources */,
 				E9D8E63C1B239B650003A526 /* HemocenterToHospitalTransactionViewController.swift in Sources */,
 				E99FA0B11B32665100C59430 /* HospitalSearchViewController.swift in Sources */,
