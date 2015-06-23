@@ -22,6 +22,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        WebServiceOperations.login("admin", password: "admin") { (success, message, authKey, user) -> Void in
+            println(message)
+        }
+        
+        
         // Do any additional setup after loading the view.
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWasShown:"), name:UIKeyboardWillShowNotification, object: nil);
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWasHided:"), name:UIKeyboardWillHideNotification, object: nil);

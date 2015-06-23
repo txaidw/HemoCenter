@@ -22,14 +22,16 @@ class WebServiceOperations {
         WebServiceOperations.request(values, completionHandler: { (JSON, connectionError) -> Void in
             let parsedResponse = self.buildParsedResponse(JSON as? NSDictionary, connectionError: connectionError)
             var newUser: User?
-            if let JSON = JSON as? [String: AnyObject] {
-                var name      = JSON["name"] as! String
-                var user_type = JSON["user_type"] as! Int
-                
-                if user_type == 1 {
-                    newUser = Manager(name: name, username: user, password: password, email: "não venho no JSON")
-                } else {
-                    newUser = Employee(name: name, username: user, password: password, email: "não venho no JSON")
+            if parsedResponse.0 {
+                if let JSON = JSON as? [String: AnyObject] {
+                    var name      = JSON["name"] as! String
+                    var user_type = JSON["user_type"] as! Int
+                    
+                    if user_type == 1 {
+                        newUser = Manager(name: name, username: user, password: password, email: "não venho no JSON")
+                    } else {
+                        newUser = Employee(name: name, username: user, password: password, email: "não venho no JSON")
+                    }
                 }
             }
             completionHandler(success: parsedResponse.0, message: parsedResponse.1, authKey: parsedResponse.2, user: newUser)
